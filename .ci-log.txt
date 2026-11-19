@@ -1,0 +1,1576 @@
+e2e	Run e2e tests	﻿2026-11-10T18:20:20.0887499Z ##[group]Run pnpm --filter=n8n-playwright test:local tests/e2e/workflows/editor/expressions tests/e2e/workflows/editor/subworkflows tests/e2e/nodes tests/e2e/credentials
+e2e	Run e2e tests	2026-11-10T18:20:20.0889734Z [36;1mpnpm --filter=n8n-playwright test:local tests/e2e/workflows/editor/expressions tests/e2e/workflows/editor/subworkflows tests/e2e/nodes tests/e2e/credentials[0m
+e2e	Run e2e tests	2026-11-10T18:20:20.0957441Z shell: /usr/bin/bash -e {0}
+e2e	Run e2e tests	2026-11-10T18:20:20.0958174Z env:
+e2e	Run e2e tests	2026-11-10T18:20:20.0959043Z   PLAYWRIGHT_BROWSERS_PATH: /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/.playwright-browsers
+e2e	Run e2e tests	2026-11-10T18:20:20.0960085Z   PNPM_HOME: /home/runner/setup-pnpm
+e2e	Run e2e tests	2026-11-10T18:20:20.0960564Z   TURBOGHA_PORT: 35543
+e2e	Run e2e tests	2026-11-10T18:20:20.0961174Z   TURBO_API: http://localhost:35543
+e2e	Run e2e tests	2026-11-10T18:20:20.0961652Z   TURBO_TOKEN: turbogha
+e2e	Run e2e tests	2026-11-10T18:20:20.0962039Z   TURBO_TEAM: turbogha
+e2e	Run e2e tests	2026-11-10T18:20:20.0962563Z   CURRENTS_RECORD_KEY: ***
+e2e	Run e2e tests	2026-11-10T18:20:20.0963023Z   CURRENTS_PROJECT_ID: ***
+e2e	Run e2e tests	2026-11-10T18:20:20.0963617Z   NO_PROXY: .currents.dev,.r2.cloudflarestorage.com
+e2e	Run e2e tests	2026-11-10T18:20:20.0964161Z ##[endgroup]
+e2e	Run e2e tests	2026-11-10T18:20:20.4676101Z $ N8N_BASE_URL=http://localhost:5680 RESET_E2E_DB=true playwright test --project=e2e tests/e2e/workflows/editor/expressions tests/e2e/workflows/editor/subworkflows tests/e2e/nodes tests/e2e/credentials
+e2e	Run e2e tests	2026-11-10T18:20:22.1225590Z [WebServer] $ node scripts/os-normalize.mjs --dir packages/cli/bin n8n
+e2e	Run e2e tests	2026-11-10T18:20:22.2141427Z [WebServer] $ cd packages/cli/bin
+e2e	Run e2e tests	2026-11-10T18:20:22.2197481Z [WebServer] $ ./n8n 
+e2e	Run e2e tests	2026-11-10T18:20:29.4734886Z [WebServer] (node:4584) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+e2e	Run e2e tests	2026-11-10T18:20:29.4737437Z [WebServer] (Use `node --trace-deprecation ...` to show where the warning was created)
+e2e	Run e2e tests	2026-11-10T18:20:33.5773925Z 🚀 Starting global setup...
+e2e	Run e2e tests	2026-11-10T18:20:33.5774881Z 🔄 Resetting database for http://localhost:5680...
+e2e	Run e2e tests	2026-11-10T18:20:37.1659455Z ✅ Database reset completed successfully
+e2e	Run e2e tests	2026-11-10T18:20:37.1691629Z 🏁 Global setup completed
+e2e	Run e2e tests	2026-11-10T18:20:40.6827830Z 
+e2e	Run e2e tests	2026-11-10T18:20:40.6828575Z Running 150 tests using 4 workers
+e2e	Run e2e tests	2026-11-10T18:20:40.6829003Z 
+e2e	Run e2e tests	2026-11-10T18:20:40.7462922Z 📦 Currents reporter: 2.7.0 recording to project ***
+e2e	Run e2e tests	2026-11-10T18:20:40.7464005Z 🎭 Playwright: 1.62.1 150 tests in 1 project [e2e] 
+e2e	Run e2e tests	2026-11-10T18:20:45.0775525Z 🔨 CI Build ID: miguelangaranocurrents/n8n-0577bc-42335637725-3 auto-detected
+e2e	Run e2e tests	2026-11-10T18:20:45.0821779Z 🌐 Run URL: https://app.currents.dev/run/9cb1d6e62e8ae9e1
+e2e	Run e2e tests	2026-11-10T18:20:45.0861176Z 
+e2e	Run e2e tests	2026-11-10T18:20:45.0941797Z ================================================================
+e2e	Run e2e tests	2026-11-10T18:20:45.1001738Z 
+e2e	Run e2e tests	2026-11-10T18:20:46.5744512Z   ✓    3 [e2e] › tests/e2e/credentials/api-operations.spec.ts:101:8 › Credential API Operations › Project Integration › should handle credential-project associations (730ms)
+e2e	Run e2e tests	2026-11-10T18:20:46.5844487Z   passed [e2e] › tests/e2e/credentials/api-operations.spec.ts:101:8 › Credential API Operations › Project Integration › should handle credential-project associations
+e2e	Run e2e tests	2026-11-10T18:20:46.6512789Z   ✓    4 [e2e] › tests/e2e/credentials/api-operations.spec.ts:64:8 › Credential API Operations › Credential Listing › should list credentials with different query options (806ms)
+e2e	Run e2e tests	2026-11-10T18:20:46.6533266Z   passed [e2e] › tests/e2e/credentials/api-operations.spec.ts:64:8 › Credential API Operations › Credential Listing › should list credentials with different query options
+e2e	Run e2e tests	2026-11-10T18:20:46.8059671Z   ✓    2 [e2e] › tests/e2e/credentials/api-operations.spec.ts:126:8 › Credential API Operations › Project Integration › should transfer credential between projects (988ms)
+e2e	Run e2e tests	2026-11-10T18:20:46.8073913Z   passed [e2e] › tests/e2e/credentials/api-operations.spec.ts:126:8 › Credential API Operations › Project Integration › should transfer credential between projects
+e2e	Run e2e tests	2026-11-10T18:20:47.0367653Z   ✓    1 [e2e] › tests/e2e/credentials/api-operations.spec.ts:12:8 › Credential API Operations › Basic CRUD Operations › should create, retrieve, update, and delete credential (1.2s)
+e2e	Run e2e tests	2026-11-10T18:20:47.0387683Z   passed [e2e] › tests/e2e/credentials/api-operations.spec.ts:12:8 › Credential API Operations › Basic CRUD Operations › should create, retrieve, update, and delete credential
+e2e	Run e2e tests	2026-11-10T18:20:47.7238606Z   ✓    5 [e2e] › tests/e2e/credentials/api-operations.spec.ts:166:8 › Credential API Operations › Data Persistence › should maintain credential data across operations (993ms)
+e2e	Run e2e tests	2026-11-10T18:20:47.7282579Z   passed [e2e] › tests/e2e/credentials/api-operations.spec.ts:166:8 › Credential API Operations › Data Persistence › should maintain credential data across operations
+e2e	Run e2e tests	2026-11-10T18:21:09.3633123Z   ✓    8 [e2e] › tests/e2e/credentials/crud.spec.ts:25:7 › Credentials › should sort credentials (21.8s)
+e2e	Run e2e tests	2026-11-10T18:21:09.3642419Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:25:7 › Credentials › should sort credentials
+e2e	Run e2e tests	2026-11-10T18:21:12.2443141Z   ✓    9 [e2e] › tests/e2e/credentials/crud.spec.ts:57:7 › Credentials › should create credentials from NDV for node with multiple auth options (23.8s)
+e2e	Run e2e tests	2026-11-10T18:21:12.2532566Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:57:7 › Credentials › should create credentials from NDV for node with multiple auth options
+e2e	Run e2e tests	2026-11-10T18:21:12.3139069Z   ✓    7 [e2e] › tests/e2e/credentials/crud.spec.ts:11:7 › Credentials › should create a new credential using empty state (25.1s)
+e2e	Run e2e tests	2026-11-10T18:21:12.3170634Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:11:7 › Credentials › should create a new credential using empty state
+e2e	Run e2e tests	2026-11-10T18:21:29.1658928Z   ✓   10 [e2e] › tests/e2e/credentials/crud.spec.ts:85:7 › Credentials › should show multiple credential types in the same dropdown (18.7s)
+e2e	Run e2e tests	2026-11-10T18:21:29.1682661Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:85:7 › Credentials › should show multiple credential types in the same dropdown
+e2e	Run e2e tests	2026-11-10T18:21:38.0143470Z   ✘    6 [e2e] › tests/e2e/credentials/credential-replacement.spec.ts:11:7 › Credential replacement › keeps the credential chosen to replace a deleted one (50.3s)
+e2e	Run e2e tests	2026-11-10T18:21:39.3149426Z   ✓   12 [e2e] › tests/e2e/credentials/crud.spec.ts:132:7 › Credentials › should create credentials from NDV for node with no auth options (26.4s)
+e2e	Run e2e tests	2026-11-10T18:21:39.3151757Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:132:7 › Credentials › should create credentials from NDV for node with no auth options
+e2e	Run e2e tests	2026-11-10T18:21:48.3829601Z   ✘   11 [e2e] › tests/e2e/credentials/crud.spec.ts:113:7 › Credentials › should correctly render required and optional credentials (35.3s)
+e2e	Run e2e tests	2026-11-10T18:21:55.6357344Z   ✓   13 [e2e] › tests/e2e/credentials/crud.spec.ts:150:7 › Credentials › should delete credentials from NDV (24.7s)
+e2e	Run e2e tests	2026-11-10T18:21:55.6426750Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:150:7 › Credentials › should delete credentials from NDV
+e2e	Run e2e tests	2026-11-10T18:22:05.8198040Z   ✓   14 [e2e] › tests/e2e/credentials/crud.spec.ts:174:7 › Credentials › should rename credentials from NDV (25.7s)
+e2e	Run e2e tests	2026-11-10T18:22:05.8257997Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:174:7 › Credentials › should rename credentials from NDV
+e2e	Run e2e tests	2026-11-10T18:22:22.7000622Z   ✓   17 [e2e] › tests/e2e/credentials/crud.spec.ts:198:7 › Credentials › should edit credential for non-standard credential type (26.1s)
+e2e	Run e2e tests	2026-11-10T18:22:22.7017711Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:198:7 › Credentials › should edit credential for non-standard credential type
+e2e	Run e2e tests	2026-11-10T18:22:23.2572914Z   ✓   18 [e2e] › tests/e2e/credentials/crud.spec.ts:225:7 › Credentials › should set a default credential when adding nodes (16.8s)
+e2e	Run e2e tests	2026-11-10T18:22:23.2614093Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:225:7 › Credentials › should set a default credential when adding nodes
+e2e	Run e2e tests	2026-11-10T18:22:25.8992803Z   ✘   16 [e2e] › tests/e2e/credentials/crud.spec.ts:113:7 › Credentials › should correctly render required and optional credentials (retry #1) (31.9s)
+e2e	Run e2e tests	2026-11-10T18:22:34.9924338Z   ✘   15 [e2e] › tests/e2e/credentials/credential-replacement.spec.ts:11:7 › Credential replacement › keeps the credential chosen to replace a deleted one (retry #1) (51.8s)
+e2e	Run e2e tests	2026-11-10T18:22:46.3582868Z   ✓   19 [e2e] › tests/e2e/credentials/crud.spec.ts:245:7 › Credentials › should set a default credential when editing a node (22.7s)
+e2e	Run e2e tests	2026-11-10T18:22:46.3602727Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:245:7 › Credentials › should set a default credential when editing a node
+e2e	Run e2e tests	2026-11-10T18:22:48.5324384Z   ✓   20 [e2e] › tests/e2e/credentials/crud.spec.ts:268:7 › Credentials › should setup generic authentication for HTTP node (24.3s)
+e2e	Run e2e tests	2026-11-10T18:22:48.5358202Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:268:7 › Credentials › should setup generic authentication for HTTP node
+e2e	Run e2e tests	2026-11-10T18:23:01.4398502Z   ✘   21 [e2e] › tests/e2e/credentials/crud.spec.ts:113:7 › Credentials › should correctly render required and optional credentials (retry #2) (31.8s)
+e2e	Run e2e tests	2026-11-10T18:23:01.4417607Z   failed [e2e] › tests/e2e/credentials/crud.spec.ts:113:7 › Credentials › should correctly render required and optional credentials (3 attempts)
+e2e	Run e2e tests	2026-11-10T18:23:01.4418921Z 
+e2e	Run e2e tests	2026-11-10T18:23:01.4419753Z   Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveCount[2m([22m[32mexpected[39m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T18:23:01.4420569Z 
+e2e	Run e2e tests	2026-11-10T18:23:01.4421792Z   Locator:  getByTestId('ndv').getByTestId('node-credentials-empty-state')
+e2e	Run e2e tests	2026-11-10T18:23:01.4438659Z   Expected: [32m2[39m
+e2e	Run e2e tests	2026-11-10T18:23:01.4441722Z   Received: [31m1[39m
+e2e	Run e2e tests	2026-11-10T18:23:01.4442848Z   Timeout:  10000ms
+e2e	Run e2e tests	2026-11-10T18:23:01.4443267Z 
+e2e	Run e2e tests	2026-11-10T18:23:01.4443592Z   Call log:
+e2e	Run e2e tests	2026-11-10T18:23:01.4444349Z   [2m  - Expect "toHaveCount" with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-10T18:23:01.4445529Z   [2m  - waiting for getByTestId('ndv').getByTestId('node-credentials-empty-state')[22m
+e2e	Run e2e tests	2026-11-10T18:23:01.4446627Z   [2m    23 × locator resolved to 1 element[22m
+e2e	Run e2e tests	2026-11-10T18:23:01.4447467Z   [2m       - unexpected value "1"[22m
+e2e	Run e2e tests	2026-11-10T18:23:01.4447950Z 
+e2e	Run e2e tests	2026-11-10T18:23:01.4448107Z 
+e2e	Run e2e tests	2026-11-10T18:23:01.4449447Z   [0m [90m 116 |[39m 			[36mawait[39m n8n[33m.[39mcanvas[33m.[39maddNode([32m'Pipedrive'[39m[33m,[39m { trigger[33m:[39m [32m'On new Pipedrive event'[39m })[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:23:01.4451710Z    [90m 117 |[39m 			[36mawait[39m n8n[33m.[39mndv[33m.[39mselectOptionInParameterDropdown([32m'incomingAuthentication'[39m[33m,[39m [32m'Basic Auth'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:23:01.4470429Z   [31m[1m>[22m[39m[90m 118 |[39m 			[36mawait[39m expect(n8n[33m.[39mndv[33m.[39mgetNodeCredentialsEmptyState())[33m.[39mtoHaveCount([35m2[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:23:01.4475158Z    [90m     |[39m 			                                                     [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-10T18:23:01.4475807Z    [90m 119 |[39m
+e2e	Run e2e tests	2026-11-10T18:23:01.4476720Z    [90m 120 |[39m 			[36mawait[39m n8n[33m.[39mndv[33m.[39mclickCreateNewCredential([35m0[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:23:01.4478003Z    [90m 121 |[39m 			[90m// First credential type has multiple auth options → mode selector visible[39m[0m
+e2e	Run e2e tests	2026-11-10T18:23:01.4478616Z 
+e2e	Run e2e tests	2026-11-10T18:23:01.4479347Z       at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/credentials/crud.spec.ts:118:57
+e2e	Run e2e tests	2026-11-10T18:23:01.4480118Z 
+e2e	Run e2e tests	2026-11-10T18:23:07.5959401Z   ✓   24 [e2e] › tests/e2e/credentials/crud.spec.ts:319:7 › Credentials › ADO-2583 should show notifications above credential modal overlay (18.6s)
+e2e	Run e2e tests	2026-11-10T18:23:07.5976485Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:319:7 › Credentials › ADO-2583 should show notifications above credential modal overlay
+e2e	Run e2e tests	2026-11-10T18:23:08.2992879Z   ✓   23 [e2e] › tests/e2e/credentials/crud.spec.ts:289:7 › Credentials › should not show OAuth redirect URL section when OAuth2 credentials are overridden (21.2s)
+e2e	Run e2e tests	2026-11-10T18:23:08.3055036Z   passed [e2e] › tests/e2e/credentials/crud.spec.ts:289:7 › Credentials › should not show OAuth redirect URL section when OAuth2 credentials are overridden
+e2e	Run e2e tests	2026-11-10T18:23:09.6451095Z   ✓   27 [e2e] › tests/e2e/nodes/code-node-api.spec.ts:62:7 › Code node API execution › should execute runOnceForAllItems and runOnceForEachItem code nodes successfully (885ms)
+e2e	Run e2e tests	2026-11-10T18:23:09.6497789Z   passed [e2e] › tests/e2e/nodes/code-node-api.spec.ts:62:7 › Code node API execution › should execute runOnceForAllItems and runOnceForEachItem code nodes successfully
+e2e	Run e2e tests	2026-11-10T18:23:34.1376308Z   ✘   22 [e2e] › tests/e2e/credentials/credential-replacement.spec.ts:11:7 › Credential replacement › keeps the credential chosen to replace a deleted one (retry #2) (53.7s)
+e2e	Run e2e tests	2026-11-10T18:23:34.1407500Z   failed [e2e] › tests/e2e/credentials/credential-replacement.spec.ts:11:7 › Credential replacement › keeps the credential chosen to replace a deleted one (3 attempts)
+e2e	Run e2e tests	2026-11-10T18:23:34.1414260Z 
+e2e	Run e2e tests	2026-11-10T18:23:34.1443931Z   Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+e2e	Run e2e tests	2026-11-10T18:23:34.1445188Z 
+e2e	Run e2e tests	2026-11-10T18:23:34.1445791Z   Expected: [32m"PkGBbbAApe7cTV6U"[39m
+e2e	Run e2e tests	2026-11-10T18:23:34.1446797Z   Received: [31m"Jf4VT9NdXUCJOscH"[39m
+e2e	Run e2e tests	2026-11-10T18:23:34.1447303Z 
+e2e	Run e2e tests	2026-11-10T18:23:34.1447610Z   Call Log:
+e2e	Run e2e tests	2026-11-10T18:23:34.1448279Z   - Timeout 30000ms exceeded while waiting on the predicate
+e2e	Run e2e tests	2026-11-10T18:23:34.1448867Z 
+e2e	Run e2e tests	2026-11-10T18:23:34.1449827Z   [0m [90m 71 |[39m 					{ timeout[33m:[39m [35m30[39m_000 }[33m,[39m
+e2e	Run e2e tests	2026-11-10T18:23:34.1450617Z    [90m 72 |[39m 				)
+e2e	Run e2e tests	2026-11-10T18:23:34.1514949Z   [31m[1m>[22m[39m[90m 73 |[39m 				[33m.[39mtoBe(replacement[33m.[39mid)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:23:34.1568088Z    [90m    |[39m 				 [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-10T18:23:34.1623460Z    [90m 74 |[39m
+e2e	Run e2e tests	2026-11-10T18:23:34.1651929Z    [90m 75 |[39m 			[36mawait[39m n8n[33m.[39mpage[33m.[39mreload()[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:23:34.1741694Z    [90m 76 |[39m 			[36mawait[39m n8n[33m.[39mcanvas[33m.[39mwaitForCanvasReady()[33m;[39m[0m
+e2e	Run e2e tests	2026-11-10T18:23:34.1763836Z 
+e2e	Run e2e tests	2026-11-10T18:23:34.1862468Z       at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/credentials/credential-replacement.spec.ts:73:6
+e2e	Run e2e tests	2026-11-10T18:23:34.1942648Z 
+e2e	Run e2e tests	2026-11-10T18:23:35.2379985Z   ✓   25 [e2e] › tests/e2e/credentials/oauth.spec.ts:9:7 › OAuth Credentials › should create and connect with Google OAuth2 (29.2s)
+e2e	Run e2e tests	2026-11-10T18:23:35.2395620Z   passed [e2e] › tests/e2e/credentials/oauth.spec.ts:9:7 › OAuth Credentials › should create and connect with Google OAuth2
+e2e	Run e2e tests	2026-11-10T18:23:35.4563164Z   ✓   26 [e2e] › tests/e2e/credentials/oauth.spec.ts:45:7 › OAuth Credentials › should connect when the callback notifies via window.opener postMessage (27.2s)
+e2e	Run e2e tests	2026-11-10T18:23:35.4612490Z   passed [e2e] › tests/e2e/credentials/oauth.spec.ts:45:7 › OAuth Credentials › should connect when the callback notifies via window.opener postMessage
+e2e	Run e2e tests	2026-11-10T18:23:35.8587031Z   ✓   28 [e2e] › tests/e2e/nodes/community-nodes.spec.ts:58:7 › Community and custom nodes in canvas › should render and select community node (21.3s)
+e2e	Run e2e tests	2026-11-10T18:23:35.8613334Z   passed [e2e] › tests/e2e/nodes/community-nodes.spec.ts:58:7 › Community and custom nodes in canvas › should render and select community node
+e2e	Run e2e tests	2026-11-10T18:23:57.7753051Z   ✓   31 [e2e] › tests/e2e/nodes/form-trigger-node.spec.ts:16:7 › Form Trigger › add node by clicking on 'On form submission' (21.1s)
+e2e	Run e2e tests	2026-11-10T18:23:57.7766858Z   passed [e2e] › tests/e2e/nodes/form-trigger-node.spec.ts:16:7 › Form Trigger › add node by clicking on 'On form submission'
+e2e	Run e2e tests	2026-11-10T18:23:57.8073467Z   ✘   30 [e2e] › tests/e2e/nodes/execution-data-node.spec.ts:9:7 › Execution Data Node › should save boolean and zero values as custom data (21.7s)
+e2e	Run e2e tests	2026-11-10T18:24:11.2125952Z   ✓   29 [e2e] › tests/e2e/nodes/community-nodes.spec.ts:89:7 › Community and custom nodes in canvas › should render custom node with custom credential (31.3s)
+e2e	Run e2e tests	2026-11-10T18:24:11.2132691Z   passed [e2e] › tests/e2e/nodes/community-nodes.spec.ts:89:7 › Community and custom nodes in canvas › should render custom node with custom credential
+e2e	Run e2e tests	2026-11-10T18:24:11.3716029Z   ✓   32 [e2e] › tests/e2e/nodes/community-nodes.spec.ts:75:7 › Community and custom nodes in canvas › should render custom node with n8n credential (27.9s)
+e2e	Run e2e tests	2026-11-10T18:24:11.3734175Z   passed [e2e] › tests/e2e/nodes/community-nodes.spec.ts:75:7 › Community and custom nodes in canvas › should render custom node with n8n credential
+e2e	Run e2e tests	2026-11-10T18:24:21.5983032Z   ✘   34 [e2e] › tests/e2e/nodes/execution-data-node.spec.ts:9:7 › Execution Data Node › should save boolean and zero values as custom data (retry #1) (18.6s)
+e2e	Run e2e tests	2026-11-10T18:24:40.3736962Z   ✓   33 [e2e] › tests/e2e/nodes/form-trigger-node.spec.ts:28:7 › Form Trigger › should fill up form fields (40.3s)
+e2e	Run e2e tests	2026-11-10T18:24:40.3757906Z   passed [e2e] › tests/e2e/nodes/form-trigger-node.spec.ts:28:7 › Form Trigger › should fill up form fields
+e2e	Run e2e tests	2026-11-10T18:24:49.1057661Z   ✓   35 [e2e] › tests/e2e/nodes/form-trigger-node.spec.ts:78:7 › Form Trigger › should create and submit a multi-page form (36.5s)
+e2e	Run e2e tests	2026-11-10T18:24:49.1082389Z   passed [e2e] › tests/e2e/nodes/form-trigger-node.spec.ts:78:7 › Form Trigger › should create and submit a multi-page form
+e2e	Run e2e tests	2026-11-10T18:24:49.6805945Z   ✘   37 [e2e] › tests/e2e/nodes/execution-data-node.spec.ts:9:7 › Execution Data Node › should save boolean and zero values as custom data (retry #2) (21.7s)
+e2e	Run e2e tests	2026-11-10T18:24:49.6838644Z   failed [e2e] › tests/e2e/nodes/execution-data-node.spec.ts:9:7 › Execution Data Node › should save boolean and zero values as custom data (3 attempts)
+e2e	Run e2e tests	2026-11-10T18:24:49.6882189Z 
+e2e	Run e2e tests	2026-11-10T18:24:49.6914540Z   Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+e2e	Run e2e tests	2026-11-10T18:24:49.6924391Z 
+e2e	Run e2e tests	2026-11-10T18:24:49.6925131Z   Expected: [32m"success"[39m
+e2e	Run e2e tests	2026-11-10T18:24:49.6927974Z   Received: [31m"error"[39m
+e2e	Run e2e tests	2026-11-10T18:24:49.6932011Z 
+e2e	Run e2e tests	2026-11-10T18:24:49.6932519Z   [0m [90m 44 |[39m
+e2e	Run e2e tests	2026-11-10T18:24:49.6934463Z    [90m 45 |[39m 			[36mconst[39m execution [33m=[39m [36mawait[39m api[33m.[39mworkflows[33m.[39mwaitForExecution(workflowId[33m,[39m [35m15000[39m[33m,[39m [32m'manual'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:24:49.6936516Z   [31m[1m>[22m[39m[90m 46 |[39m 			expect(execution[33m.[39mstatus)[33m.[39mtoBe([32m'success'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:24:49.6937704Z    [90m    |[39m 			                         [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-10T18:24:49.6938411Z    [90m 47 |[39m
+e2e	Run e2e tests	2026-11-10T18:24:49.6939692Z    [90m 48 |[39m 			[36mconst[39m details [33m=[39m [36mawait[39m api[33m.[39mworkflows[33m.[39mgetExecution(execution[33m.[39mid)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:24:49.6943073Z    [90m 49 |[39m 			expect((details [36mas[39m { customData[33m?[39m[33m:[39m [33mRecord[39m[33m<[39m[33mstring[39m[33m,[39m string[33m>[39m })[33m.[39mcustomData)[33m.[39mtoEqual({ approved[33m:[39m [32m'true'[39m[33m,[39m retries[33m:[39m [32m'0'[39m })[33m;[39m[0m
+e2e	Run e2e tests	2026-11-10T18:24:49.6945785Z 
+e2e	Run e2e tests	2026-11-10T18:24:49.6946921Z       at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/nodes/execution-data-node.spec.ts:46:29
+e2e	Run e2e tests	2026-11-10T18:24:49.6948345Z 
+e2e	Run e2e tests	2026-11-10T18:24:53.8342060Z   ✓   36 [e2e] › tests/e2e/nodes/form-trigger-node.spec.ts:140:8 › Form Trigger › form execution with basic auth › form submission works with basic auth (40.6s)
+e2e	Run e2e tests	2026-11-10T18:24:53.8404431Z   passed [e2e] › tests/e2e/nodes/form-trigger-node.spec.ts:140:8 › Form Trigger › form execution with basic auth › form submission works with basic auth
+e2e	Run e2e tests	2026-11-10T18:25:16.1263228Z   ✓   39 [e2e] › tests/e2e/nodes/http-request-node.spec.ts:13:7 › HTTP Request node › should make a request with a URL and receive a response (26.2s)
+e2e	Run e2e tests	2026-11-10T18:25:16.1306848Z   passed [e2e] › tests/e2e/nodes/http-request-node.spec.ts:13:7 › HTTP Request node › should make a request with a URL and receive a response
+e2e	Run e2e tests	2026-11-10T18:25:21.1243313Z   ✓   40 [e2e] › tests/e2e/nodes/http-request-node.spec.ts:26:8 › HTTP Request node › Credential-only HTTP Request Node variants › should render a modified HTTP Request Node (26.0s)
+e2e	Run e2e tests	2026-11-10T18:25:21.1246789Z   passed [e2e] › tests/e2e/nodes/http-request-node.spec.ts:26:8 › HTTP Request node › Credential-only HTTP Request Node variants › should render a modified HTTP Request Node
+e2e	Run e2e tests	2026-11-10T18:25:22.8423800Z   ✓   43 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:24:8 › MCP Trigger Node › Streamable HTTP Transport › should initialize session and return mcp-session-id (1.6s)
+e2e	Run e2e tests	2026-11-10T18:25:22.8429930Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:24:8 › MCP Trigger Node › Streamable HTTP Transport › should initialize session and return mcp-session-id
+e2e	Run e2e tests	2026-11-10T18:25:23.3614363Z   ✓   41 [e2e] › tests/e2e/nodes/if-node.spec.ts:16:7 › If Node (filter component) › should be able to create and delete multiple conditions (28.5s)
+e2e	Run e2e tests	2026-11-10T18:25:23.3676055Z   passed [e2e] › tests/e2e/nodes/if-node.spec.ts:16:7 › If Node (filter component) › should be able to create and delete multiple conditions
+e2e	Run e2e tests	2026-11-10T18:25:24.4518134Z   ✓   44 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:40:8 › MCP Trigger Node › Streamable HTTP Transport › should list tools via Streamable HTTP (1.5s)
+e2e	Run e2e tests	2026-11-10T18:25:24.4606264Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:40:8 › MCP Trigger Node › Streamable HTTP Transport › should list tools via Streamable HTTP
+e2e	Run e2e tests	2026-11-10T18:25:25.4704266Z   ✓   45 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:57:8 › MCP Trigger Node › Streamable HTTP Transport › should call tool via Streamable HTTP (1.9s)
+e2e	Run e2e tests	2026-11-10T18:25:25.4734456Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:57:8 › MCP Trigger Node › Streamable HTTP Transport › should call tool via Streamable HTTP
+e2e	Run e2e tests	2026-11-10T18:25:26.1296270Z   ✓   46 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:76:8 › MCP Trigger Node › Streamable HTTP Transport › should close session via DELETE (1.6s)
+e2e	Run e2e tests	2026-11-10T18:25:26.1372514Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:76:8 › MCP Trigger Node › Streamable HTTP Transport › should close session via DELETE
+e2e	Run e2e tests	2026-11-10T18:25:26.7503000Z   ✓   47 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:94:8 › MCP Trigger Node › SSE Transport › should establish SSE connection and return session (1.2s)
+e2e	Run e2e tests	2026-11-10T18:25:26.7562444Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:94:8 › MCP Trigger Node › SSE Transport › should establish SSE connection and return session
+e2e	Run e2e tests	2026-11-10T18:25:26.8105702Z   ✓   38 [e2e] › tests/e2e/nodes/form-trigger-node.spec.ts:207:8 › Form Trigger › form execution with basic auth › multi-step form submission works with basic auth (45.3s)
+e2e	Run e2e tests	2026-11-10T18:25:26.8123057Z   passed [e2e] › tests/e2e/nodes/form-trigger-node.spec.ts:207:8 › Form Trigger › form execution with basic auth › multi-step form submission works with basic auth
+e2e	Run e2e tests	2026-11-10T18:25:27.5808984Z   ✓   48 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:114:8 › MCP Trigger Node › SSE Transport › should list connected tools via SSE (1.4s)
+e2e	Run e2e tests	2026-11-10T18:25:27.5872464Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:114:8 › MCP Trigger Node › SSE Transport › should list connected tools via SSE
+e2e	Run e2e tests	2026-11-10T18:25:28.1542068Z   ✓   49 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:135:8 › MCP Trigger Node › SSE Transport › should call tool and receive response via SSE (1.4s)
+e2e	Run e2e tests	2026-11-10T18:25:28.1577029Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:135:8 › MCP Trigger Node › SSE Transport › should call tool and receive response via SSE
+e2e	Run e2e tests	2026-11-10T18:25:28.5063137Z   ✓   50 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:160:8 › MCP Trigger Node › Authentication › should reject unauthenticated request with bearerAuth (1.6s)
+e2e	Run e2e tests	2026-11-10T18:25:28.5112490Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:160:8 › MCP Trigger Node › Authentication › should reject unauthenticated request with bearerAuth
+e2e	Run e2e tests	2026-11-10T18:25:29.3873120Z   ✓   51 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:203:8 › MCP Trigger Node › Authentication › should accept valid bearer token (1.7s)
+e2e	Run e2e tests	2026-11-10T18:25:29.3892576Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:203:8 › MCP Trigger Node › Authentication › should accept valid bearer token
+e2e	Run e2e tests	2026-11-10T18:25:30.3781412Z   ✓   53 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:290:8 › MCP Trigger Node › Tool Operations › should return all connected tools in tools/list (1.8s)
+e2e	Run e2e tests	2026-11-10T18:25:30.3795021Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:290:8 › MCP Trigger Node › Tool Operations › should return all connected tools in tools/list
+e2e	Run e2e tests	2026-11-10T18:25:31.0148907Z   ✓   52 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:238:8 › MCP Trigger Node › Authentication › should accept valid header auth (2.8s)
+e2e	Run e2e tests	2026-11-10T18:25:31.0184433Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:238:8 › MCP Trigger Node › Authentication › should accept valid header auth
+e2e	Run e2e tests	2026-11-10T18:25:31.3282926Z   ✓   54 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:308:8 › MCP Trigger Node › Tool Operations › should execute tool with arguments (1.8s)
+e2e	Run e2e tests	2026-11-10T18:25:31.3334783Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:308:8 › MCP Trigger Node › Tool Operations › should execute tool with arguments
+e2e	Run e2e tests	2026-11-10T18:25:31.9913157Z   ✓   55 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:334:8 › MCP Trigger Node › Tool Operations › should return error for unknown tool (1.5s)
+e2e	Run e2e tests	2026-11-10T18:25:32.0027432Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:334:8 › MCP Trigger Node › Tool Operations › should return error for unknown tool
+e2e	Run e2e tests	2026-11-10T18:25:33.0508800Z   ✓   58 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:404:8 › MCP Trigger Node › Error Handling › should return 404 for non-existent endpoint (987ms)
+e2e	Run e2e tests	2026-11-10T18:25:33.0556275Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:404:8 › MCP Trigger Node › Error Handling › should return 404 for non-existent endpoint
+e2e	Run e2e tests	2026-11-10T18:25:34.0134248Z   ✓   59 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:414:8 › MCP Trigger Node › Error Handling › should handle malformed JSON-RPC messages (897ms)
+e2e	Run e2e tests	2026-11-10T18:25:34.0147674Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:414:8 › MCP Trigger Node › Error Handling › should handle malformed JSON-RPC messages
+e2e	Run e2e tests	2026-11-10T18:25:34.7283210Z   ✓   56 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:360:8 › MCP Trigger Node › Session Management › should reject requests with invalid session ID (3.6s)
+e2e	Run e2e tests	2026-11-10T18:25:34.7312312Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:360:8 › MCP Trigger Node › Session Management › should reject requests with invalid session ID
+e2e	Run e2e tests	2026-11-10T18:25:35.9768582Z   ✓   57 [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:382:8 › MCP Trigger Node › Session Management › should cleanup session on DELETE request (4.5s)
+e2e	Run e2e tests	2026-11-10T18:25:35.9807973Z   passed [e2e] › tests/e2e/nodes/mcp-trigger.spec.ts:382:8 › MCP Trigger Node › Session Management › should cleanup session on DELETE request
+e2e	Run e2e tests	2026-11-10T18:25:48.0206685Z   ✓   42 [e2e] › tests/e2e/nodes/if-node.spec.ts:41:7 › If Node (filter component) › should correctly evaluate conditions (30.6s)
+e2e	Run e2e tests	2026-11-10T18:25:48.0282596Z   passed [e2e] › tests/e2e/nodes/if-node.spec.ts:41:7 › If Node (filter component) › should correctly evaluate conditions
+e2e	Run e2e tests	2026-11-10T18:25:55.0870101Z [WebServer] Warning: Indexing all PDF objects
+e2e	Run e2e tests	2026-11-10T18:25:55.1292303Z [WebServer] Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+e2e	Run e2e tests	2026-11-10T18:25:57.9916989Z   ✓   60 [e2e] › tests/e2e/nodes/pdf-node.spec.ts:9:7 › PDF Test › Can read and write PDF files and extract text (23.0s)
+e2e	Run e2e tests	2026-11-10T18:25:58.0013164Z   passed [e2e] › tests/e2e/nodes/pdf-node.spec.ts:9:7 › PDF Test › Can read and write PDF files and extract text
+e2e	Run e2e tests	2026-11-10T18:26:00.7043286Z   ✓   61 [e2e] › tests/e2e/nodes/schedule-trigger-node.spec.ts:13:7 › Schedule Trigger node › should execute schedule trigger node and return timestamp in output (25.0s)
+e2e	Run e2e tests	2026-11-10T18:26:00.7079119Z   passed [e2e] › tests/e2e/nodes/schedule-trigger-node.spec.ts:13:7 › Schedule Trigger node › should execute schedule trigger node and return timestamp in output
+e2e	Run e2e tests	2026-11-10T18:26:05.2599154Z Error in /rest/settings intercept: route.fetch: read ECONNRESET
+e2e	Run e2e tests	2026-11-10T18:26:05.2661389Z Call log:
+e2e	Run e2e tests	2026-11-10T18:26:05.2678250Z   - → GET http://localhost:5680/rest/settings
+e2e	Run e2e tests	2026-11-10T18:26:05.2744332Z     - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36
+e2e	Run e2e tests	2026-11-10T18:26:05.2768638Z     - accept: application/json, text/plain, */*
+e2e	Run e2e tests	2026-11-10T18:26:05.2831351Z     - accept-encoding: gzip,deflate,br
+e2e	Run e2e tests	2026-11-10T18:26:05.2871266Z     - accept-language: en
+e2e	Run e2e tests	2026-11-10T18:26:05.2951501Z     - cookie: n8n-auth=***
+e2e	Run e2e tests	2026-11-10T18:26:05.2994199Z     - browser-id: fc43bd3a-384c-4734-be6d-f52d8685ebe3
+e2e	Run e2e tests	2026-11-10T18:26:05.3053601Z     - push-ref: u4mue1u5z7
+e2e	Run e2e tests	2026-11-10T18:26:05.3111615Z     - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"
+e2e	Run e2e tests	2026-11-10T18:26:05.3171252Z     - sec-ch-ua-mobile: ?0
+e2e	Run e2e tests	2026-11-10T18:26:05.3201249Z     - sec-ch-ua-platform: "Linux"
+e2e	Run e2e tests	2026-11-10T18:26:05.3230978Z 
+e2e	Run e2e tests	2026-11-10T18:26:05.3253349Z     at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/config/intercepts.ts:35:41 {
+e2e	Run e2e tests	2026-11-10T18:26:05.3331218Z   log: [
+e2e	Run e2e tests	2026-11-10T18:26:05.3404560Z     '  - → GET http://localhost:5680/rest/settings',
+e2e	Run e2e tests	2026-11-10T18:26:05.3431899Z     '    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36',
+e2e	Run e2e tests	2026-11-10T18:26:05.3461375Z     '    - accept: application/json, text/plain, */*',
+e2e	Run e2e tests	2026-11-10T18:26:05.3521525Z     '    - accept-encoding: gzip,deflate,br',
+e2e	Run e2e tests	2026-11-10T18:26:05.3573878Z     '    - accept-language: en',
+e2e	Run e2e tests	2026-11-10T18:26:05.3608644Z     '    - cookie: n8n-auth=***',
+e2e	Run e2e tests	2026-11-10T18:26:05.3703375Z     '    - browser-id: fc43bd3a-384c-4734-be6d-f52d8685ebe3',
+e2e	Run e2e tests	2026-11-10T18:26:05.3745882Z     '    - push-ref: u4mue1u5z7',
+e2e	Run e2e tests	2026-11-10T18:26:05.3871879Z     '    - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"',
+e2e	Run e2e tests	2026-11-10T18:26:05.3920402Z     '    - sec-ch-ua-mobile: ?0',
+e2e	Run e2e tests	2026-11-10T18:26:05.4010411Z     '    - sec-ch-ua-platform: "Linux"'
+e2e	Run e2e tests	2026-11-10T18:26:05.4062628Z   ],
+e2e	Run e2e tests	2026-11-10T18:26:05.4111968Z   name: 'Error',
+e2e	Run e2e tests	2026-11-10T18:26:05.4167507Z   Symbol(step): {
+e2e	Run e2e tests	2026-11-10T18:26:05.4207294Z     location: {
+e2e	Run e2e tests	2026-11-10T18:26:05.4282086Z       file: '/home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/config/intercepts.ts',
+e2e	Run e2e tests	2026-11-10T18:26:05.4341417Z       line: 35,
+e2e	Run e2e tests	2026-11-10T18:26:05.4381247Z       column: 41
+e2e	Run e2e tests	2026-11-10T18:26:05.4451239Z     },
+e2e	Run e2e tests	2026-11-10T18:26:05.4501150Z     category: 'pw:api',
+e2e	Run e2e tests	2026-11-10T18:26:05.4531776Z     title: 'GET "/rest/settings"',
+e2e	Run e2e tests	2026-11-10T18:26:05.4668919Z     apiName: 'route.fetch',
+e2e	Run e2e tests	2026-11-10T18:26:05.4721627Z     params: {
+e2e	Run e2e tests	2026-11-10T18:26:05.4781408Z       url: 'http://localhost:5680/rest/settings',
+e2e	Run e2e tests	2026-11-10T18:26:05.4921734Z       params: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.4991659Z       encodedParams: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.5026251Z       method: 'GET',
+e2e	Run e2e tests	2026-11-10T18:26:05.5102610Z       headers: [Array],
+e2e	Run e2e tests	2026-11-10T18:26:05.5224822Z       postData: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.5281552Z       jsonData: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.5391548Z       formData: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.5481431Z       multipartData: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.5661792Z       failOnStatusCode: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.5711825Z       ignoreHTTPSErrors: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.5743608Z       maxRedirects: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.5837904Z       maxRetries: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.5931594Z       __testHookLookup: undefined
+e2e	Run e2e tests	2026-11-10T18:26:05.5982493Z     },
+e2e	Run e2e tests	2026-11-10T18:26:05.6121431Z     group: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.6164999Z     stepId: 'pw:api@68',
+e2e	Run e2e tests	2026-11-10T18:26:05.6249052Z     boxedStack: undefined,
+e2e	Run e2e tests	2026-11-10T18:26:05.6324215Z     steps: [],
+e2e	Run e2e tests	2026-11-10T18:26:05.6401451Z     attachmentIndices: [],
+e2e	Run e2e tests	2026-11-10T18:26:05.6431424Z     info: TestStepInfoImpl {
+e2e	Run e2e tests	2026-11-10T18:26:05.6504569Z       annotations: [],
+e2e	Run e2e tests	2026-11-10T18:26:05.6541191Z       _testInfo: [TestInfoImpl],
+e2e	Run e2e tests	2026-11-10T18:26:05.6621301Z       _stepId: 'pw:api@68',
+e2e	Run e2e tests	2026-11-10T18:26:05.6661574Z       _title: 'GET "/rest/settings"',
+e2e	Run e2e tests	2026-11-10T18:26:05.6714282Z       _parentStep: [TestStepInfoImpl],
+e2e	Run e2e tests	2026-11-10T18:26:05.6765162Z       skip: [Function (anonymous)]
+e2e	Run e2e tests	2026-11-10T18:26:05.6841249Z     },
+e2e	Run e2e tests	2026-11-10T18:26:05.6848095Z     complete: [Function: complete],
+e2e	Run e2e tests	2026-11-10T18:26:05.6901386Z     endWallTime: 1794335165239,
+e2e	Run e2e tests	2026-11-10T18:26:05.7001327Z     error: {
+e2e	Run e2e tests	2026-11-10T18:26:05.7031378Z       message: 'Error: route.fetch: read ECONNRESET\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7072326Z         'Call log:\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7122667Z         '\x1B[2m  - → GET http://localhost:5680/rest/settings\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7171977Z         '\x1B[2m    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7221454Z         '\x1B[2m    - accept: application/json, text/plain, */*\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7311529Z         '\x1B[2m    - accept-encoding: gzip,deflate,br\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7391421Z         '\x1B[2m    - accept-language: en\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7425295Z         '\x1B[2m    - cookie: n8n-auth=***' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7521795Z         '\x1B[2m    - browser-id: fc43bd3a-384c-4734-be6d-f52d8685ebe3\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7551372Z         '\x1B[2m    - push-ref: u4mue1u5z7\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7611902Z         '\x1B[2m    - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7651424Z         '\x1B[2m    - sec-ch-ua-mobile: ?0\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7761750Z         '\x1B[2m    - sec-ch-ua-platform: "Linux"\x1B[22m\n',
+e2e	Run e2e tests	2026-11-10T18:26:05.7787837Z       stack: 'Error: route.fetch: read ECONNRESET\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7901419Z         'Call log:\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.7971914Z         '\x1B[2m  - → GET http://localhost:5680/rest/settings\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8032085Z         '\x1B[2m    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8039074Z         '\x1B[2m    - accept: application/json, text/plain, */*\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8091450Z         '\x1B[2m    - accept-encoding: gzip,deflate,br\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8151397Z         '\x1B[2m    - accept-language: en\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8207413Z         '\x1B[2m    - cookie: n8n-auth=***' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8241545Z         '\x1B[2m    - browser-id: fc43bd3a-384c-4734-be6d-f52d8685ebe3\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8291381Z         '\x1B[2m    - push-ref: u4mue1u5z7\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8341627Z         '\x1B[2m    - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8371921Z         '\x1B[2m    - sec-ch-ua-mobile: ?0\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8451459Z         '\x1B[2m    - sec-ch-ua-platform: "Linux"\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8492212Z         '\n' +
+e2e	Run e2e tests	2026-11-10T18:26:05.8601925Z         '    at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/config/intercepts.ts:35:41',
+e2e	Run e2e tests	2026-11-10T18:26:05.8729915Z       cause: undefined
+e2e	Run e2e tests	2026-11-10T18:26:05.8858599Z     }
+e2e	Run e2e tests	2026-11-10T18:26:05.8961541Z   }
+e2e	Run e2e tests	2026-11-10T18:26:05.8983268Z }
+e2e	Run e2e tests	2026-11-10T18:26:24.8716407Z   ✓   62 [e2e] › tests/e2e/nodes/webhook.spec.ts:20:7 › Webhook Trigger node › should listen for all HTTP methods (GET, POST, DELETE, HEAD, PATCH, PUT) (46.3s)
+e2e	Run e2e tests	2026-11-10T18:26:24.8937030Z   passed [e2e] › tests/e2e/nodes/webhook.spec.ts:20:7 › Webhook Trigger node › should listen for all HTTP methods (GET, POST, DELETE, HEAD, PATCH, PUT)
+e2e	Run e2e tests	2026-11-10T18:26:26.0273548Z   ✓   63 [e2e] › tests/e2e/nodes/webhook.spec.ts:40:7 › Webhook Trigger node › should listen for a GET request and respond with Respond to Webhook node (36.5s)
+e2e	Run e2e tests	2026-11-10T18:26:26.0302988Z   passed [e2e] › tests/e2e/nodes/webhook.spec.ts:40:7 › Webhook Trigger node › should listen for a GET request and respond with Respond to Webhook node
+e2e	Run e2e tests	2026-11-10T18:26:30.1223332Z   ✓   64 [e2e] › tests/e2e/nodes/webhook.spec.ts:62:7 › Webhook Trigger node › should listen for a GET request and respond with custom status code 201 (30.7s)
+e2e	Run e2e tests	2026-11-10T18:26:30.1301488Z   passed [e2e] › tests/e2e/nodes/webhook.spec.ts:62:7 › Webhook Trigger node › should listen for a GET request and respond with custom status code 201
+e2e	Run e2e tests	2026-11-10T18:26:33.1470511Z   ✓   65 [e2e] › tests/e2e/nodes/webhook.spec.ts:80:7 › Webhook Trigger node › should listen for a GET request and respond with last node (31.4s)
+e2e	Run e2e tests	2026-11-10T18:26:33.1554584Z   passed [e2e] › tests/e2e/nodes/webhook.spec.ts:80:7 › Webhook Trigger node › should listen for a GET request and respond with last node
+e2e	Run e2e tests	2026-11-10T18:26:54.1942532Z   ✓   67 [e2e] › tests/e2e/nodes/webhook.spec.ts:134:7 › Webhook Trigger node › should listen for a GET request and respond with an empty body (26.8s)
+e2e	Run e2e tests	2026-11-10T18:26:54.1997967Z   passed [e2e] › tests/e2e/nodes/webhook.spec.ts:134:7 › Webhook Trigger node › should listen for a GET request and respond with an empty body
+e2e	Run e2e tests	2026-11-10T18:27:00.4606525Z   ✓   68 [e2e] › tests/e2e/nodes/webhook.spec.ts:152:7 › Webhook Trigger node › should listen for a GET request with Basic Authentication (29.1s)
+e2e	Run e2e tests	2026-11-10T18:27:00.4678430Z   passed [e2e] › tests/e2e/nodes/webhook.spec.ts:152:7 › Webhook Trigger node › should listen for a GET request with Basic Authentication
+e2e	Run e2e tests	2026-11-10T18:27:03.5083206Z   ✓   66 [e2e] › tests/e2e/nodes/webhook.spec.ts:102:7 › Webhook Trigger node › should listen for a GET request and respond with last node binary data (37.2s)
+e2e	Run e2e tests	2026-11-10T18:27:03.5085965Z   passed [e2e] › tests/e2e/nodes/webhook.spec.ts:102:7 › Webhook Trigger node › should listen for a GET request and respond with last node binary data
+e2e	Run e2e tests	2026-11-10T18:27:04.1973020Z   ✓   69 [e2e] › tests/e2e/nodes/webhook.spec.ts:192:7 › Webhook Trigger node › should listen for a GET request with Header Authentication (30.0s)
+e2e	Run e2e tests	2026-11-10T18:27:04.2022773Z   -   73 [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:54:9 › Inline expression editor › Basic UI functionality › should switch between expression and fixed using keyboard
+e2e	Run e2e tests	2026-11-10T18:27:04.2079413Z   passed [e2e] › tests/e2e/nodes/webhook.spec.ts:192:7 › Webhook Trigger node › should listen for a GET request with Header Authentication
+e2e	Run e2e tests	2026-11-10T18:27:04.2112935Z   skipped [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:54:9 › Inline expression editor › Basic UI functionality › should switch between expression and fixed using keyboard
+e2e	Run e2e tests	2026-11-10T18:27:25.6612988Z   ✓   70 [e2e] › tests/e2e/nodes/webhook.spec.ts:243:7 › Webhook Trigger node › CAT-1253-bug-cant-run-workflow-when-unconnected-nodes-have-errors (30.2s)
+e2e	Run e2e tests	2026-11-10T18:27:25.6624727Z   passed [e2e] › tests/e2e/nodes/webhook.spec.ts:243:7 › Webhook Trigger node › CAT-1253-bug-cant-run-workflow-when-unconnected-nodes-have-errors
+e2e	Run e2e tests	2026-11-10T18:27:25.7334269Z   ✓   71 [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:24:8 › Inline expression editor › Basic UI functionality › should open and close inline expression preview (24.6s)
+e2e	Run e2e tests	2026-11-10T18:27:25.7347327Z   passed [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:24:8 › Inline expression editor › Basic UI functionality › should open and close inline expression preview
+e2e	Run e2e tests	2026-11-10T18:27:40.1644113Z   ✘   72 [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:39:8 › Inline expression editor › Basic UI functionality › should highlight every resolved segment in the preview (35.2s)
+e2e	Run e2e tests	2026-11-10T18:27:45.5387483Z   ✓   74 [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:84:8 › Inline expression editor › Static data › should resolve primitive resolvables (40.3s)
+e2e	Run e2e tests	2026-11-10T18:27:45.5410342Z   passed [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:84:8 › Inline expression editor › Static data › should resolve primitive resolvables
+e2e	Run e2e tests	2026-11-10T18:28:04.2931309Z   ✓   76 [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:110:8 › Inline expression editor › Static data › should resolve array resolvables (37.3s)
+e2e	Run e2e tests	2026-11-10T18:28:04.2986592Z   passed [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:110:8 › Inline expression editor › Static data › should resolve array resolvables
+e2e	Run e2e tests	2026-11-10T18:28:08.5553165Z   ✓   75 [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:98:8 › Inline expression editor › Static data › should resolve object resolvables (42.0s)
+e2e	Run e2e tests	2026-11-10T18:28:08.5582558Z   passed [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:98:8 › Inline expression editor › Static data › should resolve object resolvables
+e2e	Run e2e tests	2026-11-10T18:28:20.6593489Z   ✘   77 [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:39:8 › Inline expression editor › Basic UI functionality › should highlight every resolved segment in the preview (retry #1) (34.4s)
+e2e	Run e2e tests	2026-11-10T18:28:29.3603407Z   ✓   78 [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:122:8 › Inline expression editor › Static data › should resolve bare identifiers through the workflow data context (42.7s)
+e2e	Run e2e tests	2026-11-10T18:28:29.3622538Z   passed [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:122:8 › Inline expression editor › Static data › should resolve bare identifiers through the workflow data context
+e2e	Run e2e tests	2026-11-10T18:28:32.6252953Z   ✓   79 [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:150:8 › Inline expression editor › Dynamic data › should resolve $parameter[] (27.2s)
+e2e	Run e2e tests	2026-11-10T18:28:32.6286996Z   passed [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:150:8 › Inline expression editor › Dynamic data › should resolve $parameter[]
+e2e	Run e2e tests	2026-11-10T18:28:49.7983642Z   ✓   80 [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:157:8 › Inline expression editor › Dynamic data › should resolve input: $json,$input,$(nodeName) (39.5s)
+e2e	Run e2e tests	2026-11-10T18:28:49.8002847Z   passed [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:157:8 › Inline expression editor › Dynamic data › should resolve input: $json,$input,$(nodeName)
+e2e	Run e2e tests	2026-11-10T18:28:54.9059773Z   ✓   82 [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:11:9 › Data Mapping › Expression Preview › maps expressions from table json, and resolves value based on hover (24.9s)
+e2e	Run e2e tests	2026-11-10T18:28:54.9078115Z   passed [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:11:9 › Data Mapping › Expression Preview › maps expressions from table json, and resolves value based on hover
+e2e	Run e2e tests	2026-11-10T18:28:56.0851699Z   ✓   83 [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:53:7 › Data Mapping › maps expressions from json view (22.7s)
+e2e	Run e2e tests	2026-11-10T18:28:56.0882298Z   passed [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:53:7 › Data Mapping › maps expressions from json view
+e2e	Run e2e tests	2026-11-10T18:29:01.9273861Z   ✘   81 [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:39:8 › Inline expression editor › Basic UI functionality › should highlight every resolved segment in the preview (retry #2) (33.9s)
+e2e	Run e2e tests	2026-11-10T18:29:01.9304297Z   failed [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:39:8 › Inline expression editor › Basic UI functionality › should highlight every resolved segment in the preview (3 attempts)
+e2e	Run e2e tests	2026-11-10T18:29:01.9314031Z 
+e2e	Run e2e tests	2026-11-10T18:29:01.9315138Z   Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T18:29:01.9316038Z 
+e2e	Run e2e tests	2026-11-10T18:29:01.9316786Z   Locator: getByTestId('inline-expression-editor-output').locator('.cm-valid-resolvable')
+e2e	Run e2e tests	2026-11-10T18:29:01.9317852Z   Expected: [32m"World"[39m
+e2e	Run e2e tests	2026-11-10T18:29:01.9318451Z   Timeout: 10000ms
+e2e	Run e2e tests	2026-11-10T18:29:01.9318989Z   Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T18:29:01.9319412Z 
+e2e	Run e2e tests	2026-11-10T18:29:01.9319711Z   Call log:
+e2e	Run e2e tests	2026-11-10T18:29:01.9320436Z   [2m  - Expect "toHaveText" with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-10T18:29:01.9322010Z   [2m  - waiting for getByTestId('inline-expression-editor-output').locator('.cm-valid-resolvable')[22m
+e2e	Run e2e tests	2026-11-10T18:29:01.9322933Z 
+e2e	Run e2e tests	2026-11-10T18:29:01.9323088Z 
+e2e	Run e2e tests	2026-11-10T18:29:01.9324165Z   [0m [90m 49 |[39m 				[36mconst[39m output [33m=[39m n8n[33m.[39mndv[33m.[39mgetInlineExpressionEditorOutput()[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:29:01.9325822Z    [90m 50 |[39m 				[36mawait[39m expect(output)[33m.[39mtoHaveText([32m'Hello World'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:29:01.9327804Z   [31m[1m>[22m[39m[90m 51 |[39m 				[36mawait[39m expect(output[33m.[39mlocator([32m'.cm-valid-resolvable'[39m))[33m.[39mtoHaveText([32m'World'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:29:01.9329854Z    [90m    |[39m 				                                                     [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-10T18:29:01.9331028Z    [90m 52 |[39m 			})[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:29:01.9331983Z    [90m 53 |[39m
+e2e	Run e2e tests	2026-11-10T18:29:01.9333579Z    [90m 54 |[39m 			test[33m.[39mfixme([32m'should switch between expression and fixed using keyboard'[39m[33m,[39m [36masync[39m ({ n8n }) [33m=>[39m {[0m
+e2e	Run e2e tests	2026-11-10T18:29:01.9335312Z 
+e2e	Run e2e tests	2026-11-10T18:29:01.9336510Z       at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/expressions/inline.spec.ts:51:58
+e2e	Run e2e tests	2026-11-10T18:29:01.9383995Z 
+e2e	Run e2e tests	2026-11-10T18:29:16.0533662Z   ✓   84 [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:102:7 › Data Mapping › maps expressions from previous nodes (24.9s)
+e2e	Run e2e tests	2026-11-10T18:29:16.0537139Z   -   88 [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:268:8 › Data Mapping › maps expressions to updated fields correctly
+e2e	Run e2e tests	2026-11-10T18:29:16.0612324Z   passed [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:102:7 › Data Mapping › maps expressions from previous nodes
+e2e	Run e2e tests	2026-11-10T18:29:16.0672495Z   skipped [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:268:8 › Data Mapping › maps expressions to updated fields correctly
+e2e	Run e2e tests	2026-11-10T18:29:21.6495090Z   ✓   85 [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:147:7 › Data Mapping › maps expressions from table header (25.9s)
+e2e	Run e2e tests	2026-11-10T18:29:21.6515245Z   passed [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:147:7 › Data Mapping › maps expressions from table header
+e2e	Run e2e tests	2026-11-10T18:29:21.9545866Z   ✓   86 [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:193:7 › Data Mapping › maps expressions from schema view (24.7s)
+e2e	Run e2e tests	2026-11-10T18:29:21.9643144Z   passed [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:193:7 › Data Mapping › maps expressions from schema view
+e2e	Run e2e tests	2026-11-10T18:29:35.8103019Z   ✓   87 [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:223:7 › Data Mapping › maps keys to path (28.4s)
+e2e	Run e2e tests	2026-11-10T18:29:35.8262542Z   passed [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:223:7 › Data Mapping › maps keys to path
+e2e	Run e2e tests	2026-11-10T18:29:45.5693315Z   ✓   90 [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:326:7 › Data Mapping › shows you can drop to inputs, including booleans (23.3s)
+e2e	Run e2e tests	2026-11-10T18:29:45.5743823Z   passed [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:326:7 › Data Mapping › shows you can drop to inputs, including booleans
+e2e	Run e2e tests	2026-11-10T18:29:46.1703311Z   ✓   89 [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:302:7 › Data Mapping › renders expression preview when a previous node is selected (29.2s)
+e2e	Run e2e tests	2026-11-10T18:29:46.1809606Z   passed [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:302:7 › Data Mapping › renders expression preview when a previous node is selected
+e2e	Run e2e tests	2026-11-10T18:29:49.4783469Z   ✓   91 [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:353:7 › Data Mapping › maps expressions to a specific location in the editor (26.6s)
+e2e	Run e2e tests	2026-11-10T18:29:49.4866413Z   passed [e2e] › tests/e2e/workflows/editor/expressions/mapping.spec.ts:353:7 › Data Mapping › maps expressions to a specific location in the editor
+e2e	Run e2e tests	2026-11-10T18:29:52.2562056Z Error in /rest/settings intercept: route.fetch: read ECONNRESET
+e2e	Run e2e tests	2026-11-10T18:29:52.2631425Z Call log:
+e2e	Run e2e tests	2026-11-10T18:29:52.2732271Z   - → GET http://localhost:5680/rest/settings
+e2e	Run e2e tests	2026-11-10T18:29:52.2782084Z     - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36
+e2e	Run e2e tests	2026-11-10T18:29:52.2821529Z     - accept: application/json, text/plain, */*
+e2e	Run e2e tests	2026-11-10T18:29:52.2878590Z     - accept-encoding: gzip,deflate,br
+e2e	Run e2e tests	2026-11-10T18:29:52.2931286Z     - accept-language: en
+e2e	Run e2e tests	2026-11-10T18:29:52.2979997Z     - cookie: n8n-auth=***
+e2e	Run e2e tests	2026-11-10T18:29:52.3111393Z     - browser-id: 04a8b89d-b34e-4034-971d-f53987beab88
+e2e	Run e2e tests	2026-11-10T18:29:52.3231818Z     - push-ref: jojijyaoy9
+e2e	Run e2e tests	2026-11-10T18:29:52.3283946Z     - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"
+e2e	Run e2e tests	2026-11-10T18:29:52.3407376Z     - sec-ch-ua-mobile: ?0
+e2e	Run e2e tests	2026-11-10T18:29:52.3491847Z     - sec-ch-ua-platform: "Linux"
+e2e	Run e2e tests	2026-11-10T18:29:52.3571006Z 
+e2e	Run e2e tests	2026-11-10T18:29:52.3578935Z     at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/config/intercepts.ts:35:41 {
+e2e	Run e2e tests	2026-11-10T18:29:52.3701921Z   log: [
+e2e	Run e2e tests	2026-11-10T18:29:52.3801849Z     '  - → GET http://localhost:5680/rest/settings',
+e2e	Run e2e tests	2026-11-10T18:29:52.3912298Z     '    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36',
+e2e	Run e2e tests	2026-11-10T18:29:52.3993525Z     '    - accept: application/json, text/plain, */*',
+e2e	Run e2e tests	2026-11-10T18:29:52.4091596Z     '    - accept-encoding: gzip,deflate,br',
+e2e	Run e2e tests	2026-11-10T18:29:52.4162760Z     '    - accept-language: en',
+e2e	Run e2e tests	2026-11-10T18:29:52.4182562Z     '    - cookie: n8n-auth=***',
+e2e	Run e2e tests	2026-11-10T18:29:52.4291762Z     '    - browser-id: 04a8b89d-b34e-4034-971d-f53987beab88',
+e2e	Run e2e tests	2026-11-10T18:29:52.4381700Z     '    - push-ref: jojijyaoy9',
+e2e	Run e2e tests	2026-11-10T18:29:52.4461744Z     '    - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"',
+e2e	Run e2e tests	2026-11-10T18:29:52.4531318Z     '    - sec-ch-ua-mobile: ?0',
+e2e	Run e2e tests	2026-11-10T18:29:52.4628924Z     '    - sec-ch-ua-platform: "Linux"'
+e2e	Run e2e tests	2026-11-10T18:29:52.4735582Z   ],
+e2e	Run e2e tests	2026-11-10T18:29:52.4762640Z   name: 'Error',
+e2e	Run e2e tests	2026-11-10T18:29:52.4901834Z   Symbol(step): {
+e2e	Run e2e tests	2026-11-10T18:29:52.4981468Z     location: {
+e2e	Run e2e tests	2026-11-10T18:29:52.5061952Z       file: '/home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/config/intercepts.ts',
+e2e	Run e2e tests	2026-11-10T18:29:52.5101314Z       line: 35,
+e2e	Run e2e tests	2026-11-10T18:29:52.5191651Z       column: 41
+e2e	Run e2e tests	2026-11-10T18:29:52.5273368Z     },
+e2e	Run e2e tests	2026-11-10T18:29:52.5291578Z     category: 'pw:api',
+e2e	Run e2e tests	2026-11-10T18:29:52.5374886Z     title: 'GET "/rest/settings"',
+e2e	Run e2e tests	2026-11-10T18:29:52.5461605Z     apiName: 'route.fetch',
+e2e	Run e2e tests	2026-11-10T18:29:52.5531653Z     params: {
+e2e	Run e2e tests	2026-11-10T18:29:52.5551407Z       url: 'http://localhost:5680/rest/settings',
+e2e	Run e2e tests	2026-11-10T18:29:52.5631427Z       params: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.5692195Z       encodedParams: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.5767580Z       method: 'GET',
+e2e	Run e2e tests	2026-11-10T18:29:52.5772984Z       headers: [Array],
+e2e	Run e2e tests	2026-11-10T18:29:52.5831249Z       postData: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.5901259Z       jsonData: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.5941976Z       formData: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.6031521Z       multipartData: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.6084307Z       failOnStatusCode: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.6092794Z       ignoreHTTPSErrors: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.6151606Z       maxRedirects: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.6191283Z       maxRetries: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.6211495Z       __testHookLookup: undefined
+e2e	Run e2e tests	2026-11-10T18:29:52.6311270Z     },
+e2e	Run e2e tests	2026-11-10T18:29:52.6401246Z     group: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.6471265Z     stepId: 'pw:api@68',
+e2e	Run e2e tests	2026-11-10T18:29:52.6505097Z     boxedStack: undefined,
+e2e	Run e2e tests	2026-11-10T18:29:52.6551255Z     steps: [],
+e2e	Run e2e tests	2026-11-10T18:29:52.6574973Z     attachmentIndices: [],
+e2e	Run e2e tests	2026-11-10T18:29:52.6641564Z     info: TestStepInfoImpl {
+e2e	Run e2e tests	2026-11-10T18:29:52.6701181Z       annotations: [],
+e2e	Run e2e tests	2026-11-10T18:29:52.6731333Z       _testInfo: [TestInfoImpl],
+e2e	Run e2e tests	2026-11-10T18:29:52.6761177Z       _stepId: 'pw:api@68',
+e2e	Run e2e tests	2026-11-10T18:29:52.6812444Z       _title: 'GET "/rest/settings"',
+e2e	Run e2e tests	2026-11-10T18:29:52.6851320Z       _parentStep: [TestStepInfoImpl],
+e2e	Run e2e tests	2026-11-10T18:29:52.6866463Z       skip: [Function (anonymous)]
+e2e	Run e2e tests	2026-11-10T18:29:52.6898480Z     },
+e2e	Run e2e tests	2026-11-10T18:29:52.6913246Z     complete: [Function: complete],
+e2e	Run e2e tests	2026-11-10T18:29:52.6941319Z     endWallTime: 1794335392222,
+e2e	Run e2e tests	2026-11-10T18:29:52.6958325Z     error: {
+e2e	Run e2e tests	2026-11-10T18:29:52.6979659Z       message: 'Error: route.fetch: read ECONNRESET\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.6981083Z         'Call log:\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.6982184Z         '\x1B[2m  - → GET http://localhost:5680/rest/settings\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.6983715Z         '\x1B[2m    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.6988318Z         '\x1B[2m    - accept: application/json, text/plain, */*\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.6989555Z         '\x1B[2m    - accept-encoding: gzip,deflate,br\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.6990455Z         '\x1B[2m    - accept-language: en\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.6995139Z         '\x1B[2m    - cookie: n8n-auth=***' +
+e2e	Run e2e tests	2026-11-10T18:29:52.6996133Z         '\x1B[2m    - browser-id: 04a8b89d-b34e-4034-971d-f53987beab88\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.6997129Z         '\x1B[2m    - push-ref: jojijyaoy9\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.6998304Z         '\x1B[2m    - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.6999367Z         '\x1B[2m    - sec-ch-ua-mobile: ?0\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7000173Z         '\x1B[2m    - sec-ch-ua-platform: "Linux"\x1B[22m\n',
+e2e	Run e2e tests	2026-11-10T18:29:52.7001240Z       stack: 'Error: route.fetch: read ECONNRESET\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7001944Z         'Call log:\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7002951Z         '\x1B[2m  - → GET http://localhost:5680/rest/settings\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7004485Z         '\x1B[2m    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7005948Z         '\x1B[2m    - accept: application/json, text/plain, */*\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7006923Z         '\x1B[2m    - accept-encoding: gzip,deflate,br\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7007783Z         '\x1B[2m    - accept-language: en\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7012111Z         '\x1B[2m    - cookie: n8n-auth=***' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7013309Z         '\x1B[2m    - browser-id: 04a8b89d-b34e-4034-971d-f53987beab88\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7014403Z         '\x1B[2m    - push-ref: jojijyaoy9\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7015625Z         '\x1B[2m    - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7016773Z         '\x1B[2m    - sec-ch-ua-mobile: ?0\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7017686Z         '\x1B[2m    - sec-ch-ua-platform: "Linux"\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7018577Z         '\n' +
+e2e	Run e2e tests	2026-11-10T18:29:52.7019720Z         '    at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/config/intercepts.ts:35:41',
+e2e	Run e2e tests	2026-11-10T18:29:52.7021620Z       cause: undefined
+e2e	Run e2e tests	2026-11-10T18:29:52.7022228Z     }
+e2e	Run e2e tests	2026-11-10T18:29:52.7022681Z   }
+e2e	Run e2e tests	2026-11-10T18:29:52.7023154Z }
+e2e	Run e2e tests	2026-11-10T18:30:07.6056559Z   ✓   92 [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:21:8 › Expression editor modal › Keybinds › should save the workflow with save keybind (30.9s)
+e2e	Run e2e tests	2026-11-10T18:30:07.6122979Z   passed [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:21:8 › Expression editor modal › Keybinds › should save the workflow with save keybind
+e2e	Run e2e tests	2026-11-10T18:30:15.4012775Z   ✓   94 [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:55:8 › Expression editor modal › Static data › should resolve object resolvables (28.2s)
+e2e	Run e2e tests	2026-11-10T18:30:15.4037642Z   passed [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:55:8 › Expression editor modal › Static data › should resolve object resolvables
+e2e	Run e2e tests	2026-11-10T18:30:15.4417579Z   ✓   93 [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:39:8 › Expression editor modal › Static data › should resolve primitive resolvables (29.3s)
+e2e	Run e2e tests	2026-11-10T18:30:15.4594166Z   passed [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:39:8 › Expression editor modal › Static data › should resolve primitive resolvables
+e2e	Run e2e tests	2026-11-10T18:30:18.0953471Z   ✓   95 [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:67:8 › Expression editor modal › Static data › should resolve array resolvables (27.7s)
+e2e	Run e2e tests	2026-11-10T18:30:18.0972001Z   passed [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:67:8 › Expression editor modal › Static data › should resolve array resolvables
+e2e	Run e2e tests	2026-11-10T18:30:22.0972177Z Error in /rest/settings intercept: route.fetch: read ECONNRESET
+e2e	Run e2e tests	2026-11-10T18:30:22.0991465Z Call log:
+e2e	Run e2e tests	2026-11-10T18:30:22.1031800Z   - → GET http://localhost:5680/rest/settings
+e2e	Run e2e tests	2026-11-10T18:30:22.1108635Z     - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36
+e2e	Run e2e tests	2026-11-10T18:30:22.1231133Z     - accept: application/json, text/plain, */*
+e2e	Run e2e tests	2026-11-10T18:30:22.1261397Z     - accept-encoding: gzip,deflate,br
+e2e	Run e2e tests	2026-11-10T18:30:22.1321242Z     - accept-language: en
+e2e	Run e2e tests	2026-11-10T18:30:22.1384236Z     - cookie: n8n-auth=***
+e2e	Run e2e tests	2026-11-10T18:30:22.1471400Z     - browser-id: 76e7253b-592e-47e7-9a14-22841f3bc8c0
+e2e	Run e2e tests	2026-11-10T18:30:22.1501294Z     - push-ref: hbkqmssi9t
+e2e	Run e2e tests	2026-11-10T18:30:22.1594612Z     - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"
+e2e	Run e2e tests	2026-11-10T18:30:22.1651716Z     - sec-ch-ua-mobile: ?0
+e2e	Run e2e tests	2026-11-10T18:30:22.1734396Z     - sec-ch-ua-platform: "Linux"
+e2e	Run e2e tests	2026-11-10T18:30:22.1811035Z 
+e2e	Run e2e tests	2026-11-10T18:30:22.1842573Z     at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/config/intercepts.ts:35:41 {
+e2e	Run e2e tests	2026-11-10T18:30:22.1931201Z   log: [
+e2e	Run e2e tests	2026-11-10T18:30:22.1961616Z     '  - → GET http://localhost:5680/rest/settings',
+e2e	Run e2e tests	2026-11-10T18:30:22.2019130Z     '    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36',
+e2e	Run e2e tests	2026-11-10T18:30:22.2094349Z     '    - accept: application/json, text/plain, */*',
+e2e	Run e2e tests	2026-11-10T18:30:22.2140394Z     '    - accept-encoding: gzip,deflate,br',
+e2e	Run e2e tests	2026-11-10T18:30:22.2242339Z     '    - accept-language: en',
+e2e	Run e2e tests	2026-11-10T18:30:22.2274197Z     '    - cookie: n8n-auth=***',
+e2e	Run e2e tests	2026-11-10T18:30:22.2381248Z     '    - browser-id: 76e7253b-592e-47e7-9a14-22841f3bc8c0',
+e2e	Run e2e tests	2026-11-10T18:30:22.2445928Z     '    - push-ref: hbkqmssi9t',
+e2e	Run e2e tests	2026-11-10T18:30:22.2559660Z     '    - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"',
+e2e	Run e2e tests	2026-11-10T18:30:22.2691452Z     '    - sec-ch-ua-mobile: ?0',
+e2e	Run e2e tests	2026-11-10T18:30:22.2811444Z     '    - sec-ch-ua-platform: "Linux"'
+e2e	Run e2e tests	2026-11-10T18:30:22.2901293Z   ],
+e2e	Run e2e tests	2026-11-10T18:30:22.2931013Z   name: 'Error',
+e2e	Run e2e tests	2026-11-10T18:30:22.3047503Z   Symbol(step): {
+e2e	Run e2e tests	2026-11-10T18:30:22.3161475Z     location: {
+e2e	Run e2e tests	2026-11-10T18:30:22.3212817Z       file: '/home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/config/intercepts.ts',
+e2e	Run e2e tests	2026-11-10T18:30:22.3302758Z       line: 35,
+e2e	Run e2e tests	2026-11-10T18:30:22.3431360Z       column: 41
+e2e	Run e2e tests	2026-11-10T18:30:22.3471295Z     },
+e2e	Run e2e tests	2026-11-10T18:30:22.3561254Z     category: 'pw:api',
+e2e	Run e2e tests	2026-11-10T18:30:22.3677013Z     title: 'GET "/rest/settings"',
+e2e	Run e2e tests	2026-11-10T18:30:22.3761588Z     apiName: 'route.fetch',
+e2e	Run e2e tests	2026-11-10T18:30:22.3871343Z     params: {
+e2e	Run e2e tests	2026-11-10T18:30:22.4011574Z       url: 'http://localhost:5680/rest/settings',
+e2e	Run e2e tests	2026-11-10T18:30:22.4052015Z       params: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.4179880Z       encodedParams: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.4298628Z       method: 'GET',
+e2e	Run e2e tests	2026-11-10T18:30:22.4321322Z       headers: [Array],
+e2e	Run e2e tests	2026-11-10T18:30:22.4403410Z       postData: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.4475229Z       jsonData: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.4549117Z       formData: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.4601295Z       multipartData: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.4691435Z       failOnStatusCode: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.4751291Z       ignoreHTTPSErrors: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.4811316Z       maxRedirects: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.4931354Z       maxRetries: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.4941340Z       __testHookLookup: undefined
+e2e	Run e2e tests	2026-11-10T18:30:22.5071652Z     },
+e2e	Run e2e tests	2026-11-10T18:30:22.5101221Z     group: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.5171571Z     stepId: 'pw:api@68',
+e2e	Run e2e tests	2026-11-10T18:30:22.5251292Z     boxedStack: undefined,
+e2e	Run e2e tests	2026-11-10T18:30:22.5311185Z     steps: [],
+e2e	Run e2e tests	2026-11-10T18:30:22.5371472Z     attachmentIndices: [],
+e2e	Run e2e tests	2026-11-10T18:30:22.5401412Z     info: TestStepInfoImpl {
+e2e	Run e2e tests	2026-11-10T18:30:22.5402094Z       annotations: [],
+e2e	Run e2e tests	2026-11-10T18:30:22.5481610Z       _testInfo: [TestInfoImpl],
+e2e	Run e2e tests	2026-11-10T18:30:22.5541390Z       _stepId: 'pw:api@68',
+e2e	Run e2e tests	2026-11-10T18:30:22.5571625Z       _title: 'GET "/rest/settings"',
+e2e	Run e2e tests	2026-11-10T18:30:22.5601435Z       _parentStep: [TestStepInfoImpl],
+e2e	Run e2e tests	2026-11-10T18:30:22.5661486Z       skip: [Function (anonymous)]
+e2e	Run e2e tests	2026-11-10T18:30:22.5721225Z     },
+e2e	Run e2e tests	2026-11-10T18:30:22.5751316Z     complete: [Function: complete],
+e2e	Run e2e tests	2026-11-10T18:30:22.5776314Z     endWallTime: 1794335422079,
+e2e	Run e2e tests	2026-11-10T18:30:22.5891396Z     error: {
+e2e	Run e2e tests	2026-11-10T18:30:22.6001667Z       message: 'Error: route.fetch: read ECONNRESET\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6002321Z         'Call log:\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6003327Z         '\x1B[2m  - → GET http://localhost:5680/rest/settings\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6004719Z         '\x1B[2m    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6006036Z         '\x1B[2m    - accept: application/json, text/plain, */*\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6006845Z         '\x1B[2m    - accept-encoding: gzip,deflate,br\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6007589Z         '\x1B[2m    - accept-language: en\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6017941Z         '\x1B[2m    - cookie: n8n-auth=***' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6018778Z         '\x1B[2m    - browser-id: 76e7253b-592e-47e7-9a14-22841f3bc8c0\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6019589Z         '\x1B[2m    - push-ref: hbkqmssi9t\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6020536Z         '\x1B[2m    - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6052206Z         '\x1B[2m    - sec-ch-ua-mobile: ?0\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6094947Z         '\x1B[2m    - sec-ch-ua-platform: "Linux"\x1B[22m\n',
+e2e	Run e2e tests	2026-11-10T18:30:22.6165831Z       stack: 'Error: route.fetch: read ECONNRESET\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6259864Z         'Call log:\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6292038Z         '\x1B[2m  - → GET http://localhost:5680/rest/settings\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6301744Z         '\x1B[2m    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6371669Z         '\x1B[2m    - accept: application/json, text/plain, */*\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6451567Z         '\x1B[2m    - accept-encoding: gzip,deflate,br\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6511556Z         '\x1B[2m    - accept-language: en\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6589404Z         '\x1B[2m    - cookie: n8n-auth=***' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6651705Z         '\x1B[2m    - browser-id: 76e7253b-592e-47e7-9a14-22841f3bc8c0\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6743406Z         '\x1B[2m    - push-ref: hbkqmssi9t\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6824390Z         '\x1B[2m    - sec-ch-ua: "Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6852371Z         '\x1B[2m    - sec-ch-ua-mobile: ?0\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6907795Z         '\x1B[2m    - sec-ch-ua-platform: "Linux"\x1B[22m\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6923569Z         '\n' +
+e2e	Run e2e tests	2026-11-10T18:30:22.6971437Z         '    at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/config/intercepts.ts:35:41',
+e2e	Run e2e tests	2026-11-10T18:30:22.7033994Z       cause: undefined
+e2e	Run e2e tests	2026-11-10T18:30:22.7045172Z     }
+e2e	Run e2e tests	2026-11-10T18:30:22.7091881Z   }
+e2e	Run e2e tests	2026-11-10T18:30:22.7121145Z }
+e2e	Run e2e tests	2026-11-10T18:30:41.5833914Z   ✓   96 [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:90:8 › Expression editor modal › Dynamic data › should resolve $parameter[] (32.8s)
+e2e	Run e2e tests	2026-11-10T18:30:41.5852824Z   passed [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:90:8 › Expression editor modal › Dynamic data › should resolve $parameter[]
+e2e	Run e2e tests	2026-11-10T18:30:47.2323548Z   ✓   98 [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:22:7 › Data transformation expressions › $json + native string methods (30.8s)
+e2e	Run e2e tests	2026-11-10T18:30:47.2326131Z   passed [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:22:7 › Data transformation expressions › $json + native string methods
+e2e	Run e2e tests	2026-11-10T18:30:50.6482951Z   ✓   99 [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:42:7 › Data transformation expressions › $json + n8n string methods (31.6s)
+e2e	Run e2e tests	2026-11-10T18:30:50.6542639Z   passed [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:42:7 › Data transformation expressions › $json + n8n string methods
+e2e	Run e2e tests	2026-11-10T18:30:59.0992957Z   ✓   97 [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:96:8 › Expression editor modal › Dynamic data › should resolve input: $json,$input,$(nodeName) (41.9s)
+e2e	Run e2e tests	2026-11-10T18:30:59.1052711Z   passed [e2e] › tests/e2e/workflows/editor/expressions/modal.spec.ts:96:8 › Expression editor modal › Dynamic data › should resolve input: $json,$input,$(nodeName)
+e2e	Run e2e tests	2026-11-10T18:31:12.6563092Z   ✓  100 [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:61:7 › Data transformation expressions › $json + native numeric methods (29.9s)
+e2e	Run e2e tests	2026-11-10T18:31:12.6582615Z   passed [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:61:7 › Data transformation expressions › $json + native numeric methods
+e2e	Run e2e tests	2026-11-10T18:31:19.0950960Z   ✓  101 [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:80:7 › Data transformation expressions › $json + n8n numeric methods (30.2s)
+e2e	Run e2e tests	2026-11-10T18:31:19.1042776Z   passed [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:80:7 › Data transformation expressions › $json + n8n numeric methods
+e2e	Run e2e tests	2026-11-10T18:31:23.6592620Z   ✓  102 [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:99:7 › Data transformation expressions › $json + native array access (32.0s)
+e2e	Run e2e tests	2026-11-10T18:31:23.6613420Z   passed [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:99:7 › Data transformation expressions › $json + native array access
+e2e	Run e2e tests	2026-11-10T18:31:33.3293046Z   ✓  103 [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:119:7 › Data transformation expressions › $json + n8n array methods (32.5s)
+e2e	Run e2e tests	2026-11-10T18:31:33.3382715Z   passed [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:119:7 › Data transformation expressions › $json + n8n array methods
+e2e	Run e2e tests	2026-11-10T18:31:46.7644805Z   ✓  105 [e2e] › tests/e2e/workflows/editor/subworkflows/debugging.spec.ts:21:8 › Subworkflow debugging › can inspect sub executed workflow › (Run once with all items/ Wait for Sub-workflow completion) (default behavior) (26.1s)
+e2e	Run e2e tests	2026-11-10T18:31:46.7701686Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/debugging.spec.ts:21:8 › Subworkflow debugging › can inspect sub executed workflow › (Run once with all items/ Wait for Sub-workflow completion) (default behavior)
+e2e	Run e2e tests	2026-11-10T18:31:52.0153524Z   ✓  106 [e2e] › tests/e2e/workflows/editor/subworkflows/debugging.spec.ts:36:8 › Subworkflow debugging › can inspect sub executed workflow › (Run once for each item/ Wait for Sub-workflow completion) param1 (27.6s)
+e2e	Run e2e tests	2026-11-10T18:31:52.0170868Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/debugging.spec.ts:36:8 › Subworkflow debugging › can inspect sub executed workflow › (Run once for each item/ Wait for Sub-workflow completion) param1
+e2e	Run e2e tests	2026-11-10T18:32:02.2563862Z   ✓  107 [e2e] › tests/e2e/workflows/editor/subworkflows/debugging.spec.ts:47:8 › Subworkflow debugging › can inspect sub executed workflow › (Run once with all items/ Wait for Sub-workflow completion) param2 (27.5s)
+e2e	Run e2e tests	2026-11-10T18:32:02.2603355Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/debugging.spec.ts:47:8 › Subworkflow debugging › can inspect sub executed workflow › (Run once with all items/ Wait for Sub-workflow completion) param2
+e2e	Run e2e tests	2026-11-10T18:32:04.6345297Z   ✘  104 [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:139:7 › Data transformation expressions › template literal spanning several lines (50.6s)
+e2e	Run e2e tests	2026-11-10T18:32:15.5583952Z   ✓  108 [e2e] › tests/e2e/workflows/editor/subworkflows/debugging.spec.ts:78:8 › Subworkflow debugging › can inspect sub executed workflow › (Run once for each item/ Wait for Sub-workflow completion) param3 (27.5s)
+e2e	Run e2e tests	2026-11-10T18:32:15.5627643Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/debugging.spec.ts:78:8 › Subworkflow debugging › can inspect sub executed workflow › (Run once for each item/ Wait for Sub-workflow completion) param3
+e2e	Run e2e tests	2026-11-10T18:32:15.8465683Z   ✘  110 [e2e] › tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:53:7 › Subworkflow Extraction › should extract all nodes besides trigger, succeed execution, and undo successfully (13.3s)
+e2e	Run e2e tests	2026-11-10T18:32:23.1693269Z   ✓  109 [e2e] › tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:31:7 › Subworkflow Extraction › should extract a single node, succeed execution, and undo successfully (29.1s)
+e2e	Run e2e tests	2026-11-10T18:32:23.1723103Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:31:7 › Subworkflow Extraction › should extract a single node, succeed execution, and undo successfully
+e2e	Run e2e tests	2026-11-10T18:32:26.6843229Z   ✓  114 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:100:8 › Sub-workflow output contract › returns the reported false-branch items in once mode (3.3s)
+e2e	Run e2e tests	2026-11-10T18:32:26.6902555Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:100:8 › Sub-workflow output contract › returns the reported false-branch items in once mode
+e2e	Run e2e tests	2026-11-10T18:32:30.1753002Z   ✓  115 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:100:8 › Sub-workflow output contract › returns the reported false-branch items in each mode (3.3s)
+e2e	Run e2e tests	2026-11-10T18:32:30.1773006Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:100:8 › Sub-workflow output contract › returns the reported false-branch items in each mode
+e2e	Run e2e tests	2026-11-10T18:32:33.1353023Z   ✓  116 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:120:8 › Sub-workflow output contract › returns declared filter outputs with parent item links (2.9s)
+e2e	Run e2e tests	2026-11-10T18:32:33.1394473Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:120:8 › Sub-workflow output contract › returns declared filter outputs with parent item links
+e2e	Run e2e tests	2026-11-10T18:32:37.5525292Z   ✓  117 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:120:8 › Sub-workflow output contract › returns declared emptyFilter outputs with parent item links (4.1s)
+e2e	Run e2e tests	2026-11-10T18:32:37.5755894Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:120:8 › Sub-workflow output contract › returns declared emptyFilter outputs with parent item links
+e2e	Run e2e tests	2026-11-10T18:32:39.7543143Z   ✓  118 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:120:8 › Sub-workflow output contract › returns declared switch outputs with parent item links (2.1s)
+e2e	Run e2e tests	2026-11-10T18:32:39.7625336Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:120:8 › Sub-workflow output contract › returns declared switch outputs with parent item links
+e2e	Run e2e tests	2026-11-10T18:32:41.0872244Z [WebServer] Could not calculate outputs dynamically for node:  Last
+e2e	Run e2e tests	2026-11-10T18:32:42.1813593Z   ✓  119 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:120:8 › Sub-workflow output contract › returns declared inputSwitch outputs with parent item links (2.3s)
+e2e	Run e2e tests	2026-11-10T18:32:42.1869194Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:120:8 › Sub-workflow output contract › returns declared inputSwitch outputs with parent item links
+e2e	Run e2e tests	2026-11-10T18:32:44.3553639Z   ✓  120 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:120:8 › Sub-workflow output contract › returns declared if outputs with parent item links (2.1s)
+e2e	Run e2e tests	2026-11-10T18:32:44.3567858Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:120:8 › Sub-workflow output contract › returns declared if outputs with parent item links
+e2e	Run e2e tests	2026-11-10T18:32:47.8326122Z   ✓  121 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:131:7 › Sub-workflow output contract › keeps the v1.2 output contract for an existing workflow (3.4s)
+e2e	Run e2e tests	2026-11-10T18:32:47.8333995Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:131:7 › Sub-workflow output contract › keeps the v1.2 output contract for an existing workflow
+e2e	Run e2e tests	2026-11-10T18:32:49.5243347Z   ✓  122 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:147:8 › Sub-workflow output contract › returns filter output after a persisted wait and an unpublished draft edit (1.6s)
+e2e	Run e2e tests	2026-11-10T18:32:49.5292938Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:147:8 › Sub-workflow output contract › returns filter output after a persisted wait and an unpublished draft edit
+e2e	Run e2e tests	2026-11-10T18:32:50.9013655Z   ✓  113 [e2e] › tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:53:7 › Subworkflow Extraction › should extract all nodes besides trigger, succeed execution, and undo successfully (retry #1) (28.3s)
+e2e	Run e2e tests	2026-11-10T18:32:50.9061944Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:53:7 › Subworkflow Extraction › should extract all nodes besides trigger, succeed execution, and undo successfully flaky (2 attempts)
+e2e	Run e2e tests	2026-11-10T18:32:52.0290617Z   ✓  123 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:147:8 › Sub-workflow output contract › returns emptyFilter output after a persisted wait and an unpublished draft edit (2.5s)
+e2e	Run e2e tests	2026-11-10T18:32:52.0310863Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:147:8 › Sub-workflow output contract › returns emptyFilter output after a persisted wait and an unpublished draft edit
+e2e	Run e2e tests	2026-11-10T18:32:52.3678483Z [WebServer] Could not calculate outputs dynamically for node:  Last
+e2e	Run e2e tests	2026-11-10T18:32:53.3523395Z   ✘  111 [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:139:7 › Data transformation expressions › template literal spanning several lines (retry #1) (41.7s)
+e2e	Run e2e tests	2026-11-10T18:32:53.7989385Z   ✓  124 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:147:8 › Sub-workflow output contract › returns switch output after a persisted wait and an unpublished draft edit (2.8s)
+e2e	Run e2e tests	2026-11-10T18:32:53.8019257Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:147:8 › Sub-workflow output contract › returns switch output after a persisted wait and an unpublished draft edit
+e2e	Run e2e tests	2026-11-10T18:32:54.6519172Z   ✓  125 [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:147:8 › Sub-workflow output contract › returns inputSwitch output after a persisted wait and an unpublished draft edit (2.5s)
+e2e	Run e2e tests	2026-11-10T18:32:54.6534754Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/output.spec.ts:147:8 › Sub-workflow output contract › returns inputSwitch output after a persisted wait and an unpublished draft edit
+e2e	Run e2e tests	2026-11-10T18:32:55.4763622Z   ✓  126 [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:55:7 › Sub-workflow Version Resolution › manual execution should use draft version of sub-workflow (1.6s)
+e2e	Run e2e tests	2026-11-10T18:32:55.4782997Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:55:7 › Sub-workflow Version Resolution › manual execution should use draft version of sub-workflow
+e2e	Run e2e tests	2026-11-10T18:32:55.5998627Z   ✓  112 [e2e] › tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:84:8 › Subworkflow Extraction › disconnected branch extraction (ADO-4679) › should extract a disconnected branch and connect it properly (38.7s)
+e2e	Run e2e tests	2026-11-10T18:32:55.6066695Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:84:8 › Subworkflow Extraction › disconnected branch extraction (ADO-4679) › should extract a disconnected branch and connect it properly
+e2e	Run e2e tests	2026-11-10T18:32:55.6879447Z   ✘  127 [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:128:7 › Sub-workflow Version Resolution › manual execution should use draft versions of nested sub-workflows (773ms)
+e2e	Run e2e tests	2026-11-10T18:32:56.7584161Z   ✓  129 [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:267:7 › Sub-workflow Version Resolution › should prevent publishing parent workflow when sub-workflow is not published (1.0s)
+e2e	Run e2e tests	2026-11-10T18:32:56.7633180Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:267:7 › Sub-workflow Version Resolution › should prevent publishing parent workflow when sub-workflow is not published
+e2e	Run e2e tests	2026-11-10T18:32:57.5933072Z   ✓  131 [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:327:7 › Sub-workflow Version Resolution › should allow self-referencing workflows (733ms)
+e2e	Run e2e tests	2026-11-10T18:32:57.5982680Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:327:7 › Sub-workflow Version Resolution › should allow self-referencing workflows
+e2e	Run e2e tests	2026-11-10T18:32:58.0721237Z   ✓  128 [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:220:7 › Sub-workflow Version Resolution › production execution should use published version of sub-workflow @engine:v2-pending (2.5s)
+e2e	Run e2e tests	2026-11-10T18:32:58.0731148Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:220:7 › Sub-workflow Version Resolution › production execution should use published version of sub-workflow @engine:v2-pending
+e2e	Run e2e tests	2026-11-10T18:32:59.8711620Z   ✓  132 [e2e] › tests/e2e/workflows/editor/subworkflows/wait.spec.ts:31:7 › Parent that does not wait for sub-workflow › should not wait for the sub-workflow (2.2s)
+e2e	Run e2e tests	2026-11-10T18:32:59.8747625Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/wait.spec.ts:31:7 › Parent that does not wait for sub-workflow › should not wait for the sub-workflow
+e2e	Run e2e tests	2026-11-10T18:33:00.2740884Z   ✓  133 [e2e] › tests/e2e/workflows/editor/subworkflows/wait.spec.ts:61:7 › Parent that does not wait for sub-workflow › CAT-1445 should not be restarted by the child workflow finishing (2.1s)
+e2e	Run e2e tests	2026-11-10T18:33:00.2763051Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/wait.spec.ts:61:7 › Parent that does not wait for sub-workflow › CAT-1445 should not be restarted by the child workflow finishing
+e2e	Run e2e tests	2026-11-10T18:33:00.9067561Z   ✘  134 [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:128:7 › Sub-workflow Version Resolution › manual execution should use draft versions of nested sub-workflows (retry #1) (1.4s)
+e2e	Run e2e tests	2026-11-10T18:33:02.0424394Z   ✓  135 [e2e] › tests/e2e/workflows/editor/subworkflows/wait.spec.ts:111:6 › CAT-1801: Parent receives correct data from child with wait node › should return child final output to parent after wait completes (2.1s)
+e2e	Run e2e tests	2026-11-10T18:33:02.0452816Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/wait.spec.ts:111:6 › CAT-1801: Parent receives correct data from child with wait node › should return child final output to parent after wait completes
+e2e	Run e2e tests	2026-11-10T18:33:02.0993417Z   ✓  136 [e2e] › tests/e2e/workflows/editor/subworkflows/wait.spec.ts:174:6 › CAT-3263: Parent receives error from child with wait node › should fail the Execute Workflow node when the child errors after wait completes (1.7s)
+e2e	Run e2e tests	2026-11-10T18:33:02.1146960Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/wait.spec.ts:174:6 › CAT-3263: Parent receives error from child with wait node › should fail the Execute Workflow node when the child errors after wait completes
+e2e	Run e2e tests	2026-11-10T18:33:05.6093526Z   ✘  139 [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:128:7 › Sub-workflow Version Resolution › manual execution should use draft versions of nested sub-workflows (retry #2) (923ms)
+e2e	Run e2e tests	2026-11-10T18:33:05.6142938Z   failed [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:128:7 › Sub-workflow Version Resolution › manual execution should use draft versions of nested sub-workflows (3 attempts)
+e2e	Run e2e tests	2026-11-10T18:33:05.6172016Z 
+e2e	Run e2e tests	2026-11-10T18:33:05.6232403Z   Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+e2e	Run e2e tests	2026-11-10T18:33:05.6291013Z 
+e2e	Run e2e tests	2026-11-10T18:33:05.6301682Z   Expected: [32m"success"[39m
+e2e	Run e2e tests	2026-11-10T18:33:05.6321337Z   Received: [31m"error"[39m
+e2e	Run e2e tests	2026-11-10T18:33:05.6340877Z 
+e2e	Run e2e tests	2026-11-10T18:33:05.6371180Z   [0m [90m 212 |[39m
+e2e	Run e2e tests	2026-11-10T18:33:05.6442791Z    [90m 213 |[39m 			[36mconst[39m execution [33m=[39m [36mawait[39m api[33m.[39mworkflows[33m.[39mwaitForExecution(parentWorkflowId[33m,[39m [35m15000[39m[33m,[39m [32m'manual'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:33:05.6445135Z   [31m[1m>[22m[39m[90m 214 |[39m 			expect(execution[33m.[39mstatus)[33m.[39mtoBe([32m'success'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:33:05.6491456Z    [90m     |[39m 			                         [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-10T18:33:05.6521369Z    [90m 215 |[39m
+e2e	Run e2e tests	2026-11-10T18:33:05.6542070Z    [90m 216 |[39m 			[36mconst[39m executionDetails [33m=[39m [36mawait[39m api[33m.[39mworkflows[33m.[39mgetExecution(execution[33m.[39mid)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:33:05.6571934Z    [90m 217 |[39m 			expect(executionDetails[33m.[39mdata)[33m.[39mtoContain([32m'grandchild-draft'[39m)[33m;[39m[0m
+e2e	Run e2e tests	2026-11-10T18:33:05.6580949Z 
+e2e	Run e2e tests	2026-11-10T18:33:05.6633116Z       at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:214:29
+e2e	Run e2e tests	2026-11-10T18:33:05.6651028Z 
+e2e	Run e2e tests	2026-11-10T18:33:06.7259688Z   ✓  137 [e2e] › tests/e2e/workflows/editor/subworkflows/wait.spec.ts:219:6 › CAT-1929: Parent should not resume until child with multiple waits completes › should keep parent waiting after first wait node is resumed, only completing after second wait (4.6s)
+e2e	Run e2e tests	2026-11-10T18:33:06.7290087Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/wait.spec.ts:219:6 › CAT-1929: Parent should not resume until child with multiple waits completes › should keep parent waiting after first wait node is resumed, only completing after second wait
+e2e	Run e2e tests	2026-11-10T18:33:28.9123203Z   ✓  138 [e2e] › tests/e2e/workflows/editor/subworkflows/workflow-selector.spec.ts:50:7 › Workflow Selector Parameter › should show required parameter warning (25.3s)
+e2e	Run e2e tests	2026-11-10T18:33:28.9152797Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/workflow-selector.spec.ts:50:7 › Workflow Selector Parameter › should show required parameter warning
+e2e	Run e2e tests	2026-11-10T18:33:34.1113506Z   ✓  140 [e2e] › tests/e2e/workflows/editor/subworkflows/workflow-selector.spec.ts:67:7 › Workflow Selector Parameter › should render sub-workflow links correctly (26.8s)
+e2e	Run e2e tests	2026-11-10T18:33:34.1121954Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/workflow-selector.spec.ts:67:7 › Workflow Selector Parameter › should render sub-workflow links correctly
+e2e	Run e2e tests	2026-11-10T18:33:39.5113229Z   ✓  141 [e2e] › tests/e2e/workflows/editor/subworkflows/workflow-selector.spec.ts:55:7 › Workflow Selector Parameter › should filter sub-workflows list (28.0s)
+e2e	Run e2e tests	2026-11-10T18:33:39.5145461Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/workflow-selector.spec.ts:55:7 › Workflow Selector Parameter › should filter sub-workflows list
+e2e	Run e2e tests	2026-11-10T18:33:42.0184608Z   ✘  130 [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:139:7 › Data transformation expressions › template literal spanning several lines (retry #2) (43.8s)
+e2e	Run e2e tests	2026-11-10T18:33:42.0259682Z   failed [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:139:7 › Data transformation expressions › template literal spanning several lines (3 attempts)
+e2e	Run e2e tests	2026-11-10T18:33:42.0271133Z 
+e2e	Run e2e tests	2026-11-10T18:33:42.0301929Z   Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T18:33:42.0311758Z 
+e2e	Run e2e tests	2026-11-10T18:33:42.0331629Z   Locator: getByTestId('ndv').getByTestId('output-panel').getByTestId('ndv-data-container')
+e2e	Run e2e tests	2026-11-10T18:33:42.0371532Z   Expected substring: [32m"ch[7mk_123[27m"[39m
+e2e	Run e2e tests	2026-11-10T18:33:42.0414046Z   Received string:    [31m"ch[7meckId\\nchk_ 123\\n John_123\\n[27m"[39m
+e2e	Run e2e tests	2026-11-10T18:33:42.0462101Z   Timeout: 10000ms
+e2e	Run e2e tests	2026-11-10T18:33:42.0544454Z 
+e2e	Run e2e tests	2026-11-10T18:33:42.0619736Z   Call log:
+e2e	Run e2e tests	2026-11-10T18:33:42.0635474Z   [2m  - Expect "toContainText" with timeout 10000ms[22m
+e2e	Run e2e tests	2026-11-10T18:33:42.0696306Z   [2m  - waiting for getByTestId('ndv').getByTestId('output-panel').getByTestId('ndv-data-container')[22m
+e2e	Run e2e tests	2026-11-10T18:33:42.0749109Z   [2m    5 × locator resolved to <div data-v-5a727d77="" class="_dataContainer_143qz_66" data-test-id="ndv-data-container">…</div>[22m
+e2e	Run e2e tests	2026-11-10T18:33:42.0778863Z   [2m      - unexpected value ""[22m
+e2e	Run e2e tests	2026-11-10T18:33:42.0841449Z   [2m    18 × locator resolved to <div data-v-5a727d77="" class="_dataContainer_143qz_66" data-test-id="ndv-data-container">…</div>[22m
+e2e	Run e2e tests	2026-11-10T18:33:42.0842964Z   [2m       - unexpected value "checkId\nchk_ 123\n John_123\n"[22m
+e2e	Run e2e tests	2026-11-10T18:33:42.0879853Z 
+e2e	Run e2e tests	2026-11-10T18:33:42.0941302Z 
+e2e	Run e2e tests	2026-11-10T18:33:42.1030109Z   [0m [90m 179 |[39m 			[36mawait[39m n8n[33m.[39mcanvas[33m.[39mopenNode([32m'Edit Fields'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:33:42.1092713Z    [90m 180 |[39m 			[36mawait[39m expect(n8n[33m.[39mndv[33m.[39mgetOutputDataContainer())[33m.[39mtoBeVisible()[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:33:42.1142381Z   [31m[1m>[22m[39m[90m 181 |[39m 			[36mawait[39m expect(n8n[33m.[39mndv[33m.[39mgetOutputDataContainer())[33m.[39mtoContainText([32m'chk_123'[39m)[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:33:42.1181677Z    [90m     |[39m 			                                               [31m[1m^[22m[39m
+e2e	Run e2e tests	2026-11-10T18:33:42.1241469Z    [90m 182 |[39m 		})[33m;[39m
+e2e	Run e2e tests	2026-11-10T18:33:42.1301452Z    [90m 183 |[39m 	}[33m,[39m
+e2e	Run e2e tests	2026-11-10T18:33:42.1340902Z    [90m 184 |[39m )[33m;[39m[0m
+e2e	Run e2e tests	2026-11-10T18:33:42.1377295Z 
+e2e	Run e2e tests	2026-11-10T18:33:42.1494442Z       at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/expressions/transformation.spec.ts:181:51
+e2e	Run e2e tests	2026-11-10T18:33:42.1647601Z 
+e2e	Run e2e tests	2026-11-10T18:33:47.1952623Z   -  145 [e2e] › tests/e2e/nodes/email-send-node.spec.ts:5:5 › EmailSend node sends via SMTP @engine:v2
+e2e	Run e2e tests	2026-11-10T18:33:47.2002123Z   skipped [e2e] › tests/e2e/nodes/email-send-node.spec.ts:5:5 › EmailSend node sends via SMTP @engine:v2
+e2e	Run e2e tests	2026-11-10T18:33:52.1096964Z   -  146 [e2e] › tests/e2e/nodes/kafka-nodes.spec.ts:13:7 › Kafka Nodes › Kafka node publishes messages to topic
+e2e	Run e2e tests	2026-11-10T18:33:52.1111867Z   skipped [e2e] › tests/e2e/nodes/kafka-nodes.spec.ts:13:7 › Kafka Nodes › Kafka node publishes messages to topic
+e2e	Run e2e tests	2026-11-10T18:33:52.2392703Z   -  147 [e2e] › tests/e2e/nodes/kafka-nodes.spec.ts:102:7 › Kafka Nodes › Kafka Trigger node processes messages
+e2e	Run e2e tests	2026-11-10T18:33:52.2412380Z   skipped [e2e] › tests/e2e/nodes/kafka-nodes.spec.ts:102:7 › Kafka Nodes › Kafka Trigger node processes messages
+e2e	Run e2e tests	2026-11-10T18:33:52.7538158Z   ✓  142 [e2e] › tests/e2e/workflows/editor/subworkflows/workflow-selector.spec.ts:76:7 › Workflow Selector Parameter › should switch to ID mode on expression (23.1s)
+e2e	Run e2e tests	2026-11-10T18:33:52.7592718Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/workflow-selector.spec.ts:76:7 › Workflow Selector Parameter › should switch to ID mode on expression
+e2e	Run e2e tests	2026-11-10T18:33:59.3453367Z   ✓  148 [e2e] › tests/e2e/nodes/n8n-trigger.spec.ts:51:7 › n8n Trigger node › should fire "activate" event when workflow is published (2.2s)
+e2e	Run e2e tests	2026-11-10T18:33:59.3482793Z   passed [e2e] › tests/e2e/nodes/n8n-trigger.spec.ts:51:7 › n8n Trigger node › should fire "activate" event when workflow is published
+e2e	Run e2e tests	2026-11-10T18:33:59.6902962Z   ✓  149 [e2e] › tests/e2e/nodes/n8n-trigger.spec.ts:64:7 › n8n Trigger node › should fire "update" event when active workflow is re-published (2.2s)
+e2e	Run e2e tests	2026-11-10T18:33:59.6932389Z   passed [e2e] › tests/e2e/nodes/n8n-trigger.spec.ts:64:7 › n8n Trigger node › should fire "update" event when active workflow is re-published
+e2e	Run e2e tests	2026-11-10T18:34:03.7644830Z   -  150 [e2e] › tests/e2e/nodes/send-and-wait.spec.ts:136:3 › Send and Wait workflow interactions › should complete approval flow when clicking approve URL
+e2e	Run e2e tests	2026-11-10T18:34:03.7707740Z   skipped [e2e] › tests/e2e/nodes/send-and-wait.spec.ts:136:3 › Send and Wait workflow interactions › should complete approval flow when clicking approve URL
+e2e	Run e2e tests	2026-11-10T18:34:03.8749957Z   -  151 [e2e] › tests/e2e/nodes/send-and-wait.spec.ts:159:3 › Send and Wait workflow interactions › should complete rejection flow when clicking reject URL
+e2e	Run e2e tests	2026-11-10T18:34:03.8784840Z   skipped [e2e] › tests/e2e/nodes/send-and-wait.spec.ts:159:3 › Send and Wait workflow interactions › should complete rejection flow when clicking reject URL
+e2e	Run e2e tests	2026-11-10T18:34:03.9692763Z   -  152 [e2e] › tests/e2e/nodes/send-and-wait.spec.ts:182:3 › Send and Wait workflow interactions › should reject requests with invalid signatures
+e2e	Run e2e tests	2026-11-10T18:34:03.9752464Z   skipped [e2e] › tests/e2e/nodes/send-and-wait.spec.ts:182:3 › Send and Wait workflow interactions › should reject requests with invalid signatures
+e2e	Run e2e tests	2026-11-10T18:34:04.0392976Z   -  153 [e2e] › tests/e2e/nodes/send-and-wait.spec.ts:209:3 › Send and Wait workflow interactions › should complete form submission flow
+e2e	Run e2e tests	2026-11-10T18:34:04.0472448Z   skipped [e2e] › tests/e2e/nodes/send-and-wait.spec.ts:209:3 › Send and Wait workflow interactions › should complete form submission flow
+e2e	Run e2e tests	2026-11-10T18:34:04.0558460Z   -  154 [e2e] › tests/e2e/nodes/send-and-wait.spec.ts:246:3 › Send and Wait workflow interactions › should complete approval flow in production mode (activated workflow)
+e2e	Run e2e tests	2026-11-10T18:34:04.0614472Z   skipped [e2e] › tests/e2e/nodes/send-and-wait.spec.ts:246:3 › Send and Wait workflow interactions › should complete approval flow in production mode (activated workflow)
+e2e	Run e2e tests	2026-11-10T18:34:08.3554930Z   ✓  144 [e2e] › tests/e2e/credentials/global.spec.ts:17:7 › Global credentials › owner should create HTTP header credential and set to global (22.5s)
+e2e	Run e2e tests	2026-11-10T18:34:08.3653048Z   passed [e2e] › tests/e2e/credentials/global.spec.ts:17:7 › Global credentials › owner should create HTTP header credential and set to global
+e2e	Run e2e tests	2026-11-10T18:34:10.0963200Z   -  156 [e2e] › tests/e2e/workflows/editor/expressions/quickjs-engine.spec.ts:39:7 › QuickJS expression engine › evaluates through the wasm runtime, not the legacy evaluator
+e2e	Run e2e tests	2026-11-10T18:34:10.0996217Z   skipped [e2e] › tests/e2e/workflows/editor/expressions/quickjs-engine.spec.ts:39:7 › QuickJS expression engine › evaluates through the wasm runtime, not the legacy evaluator
+e2e	Run e2e tests	2026-11-10T18:34:10.1529448Z   -  155 [e2e] › tests/e2e/workflows/editor/expressions/env-access.spec.ts:32:7 › $env in the inline expression preview › does not report env access as denied when the instance allows it
+e2e	Run e2e tests	2026-11-10T18:34:10.1673205Z   skipped [e2e] › tests/e2e/workflows/editor/expressions/env-access.spec.ts:32:7 › $env in the inline expression preview › does not report env access as denied when the instance allows it
+e2e	Run e2e tests	2026-11-10T18:34:11.1946658Z   -  158 [e2e] › tests/e2e/workflows/editor/expressions/quickjs-engine.spec.ts:73:7 › QuickJS expression engine › resolves $json with n8n extensions, and the backend agrees
+e2e	Run e2e tests	2026-11-10T18:34:11.1963934Z   skipped [e2e] › tests/e2e/workflows/editor/expressions/quickjs-engine.spec.ts:73:7 › QuickJS expression engine › resolves $json with n8n extensions, and the backend agrees
+e2e	Run e2e tests	2026-11-10T18:34:12.5289734Z   -  159 [e2e] › tests/e2e/workflows/editor/expressions/quickjs-engine.spec.ts:111:7 › QuickJS expression engine › keeps resolving after the node view is reopened
+e2e	Run e2e tests	2026-11-10T18:34:12.5313750Z   skipped [e2e] › tests/e2e/workflows/editor/expressions/quickjs-engine.spec.ts:111:7 › QuickJS expression engine › keeps resolving after the node view is reopened
+e2e	Run e2e tests	2026-11-10T18:34:14.6582732Z   -  160 [e2e] › tests/e2e/workflows/editor/expressions/quickjs-engine.spec.ts:93:7 › QuickJS expression engine › resolves luxon and Intl through the host bridge
+e2e	Run e2e tests	2026-11-10T18:34:14.6605046Z   skipped [e2e] › tests/e2e/workflows/editor/expressions/quickjs-engine.spec.ts:93:7 › QuickJS expression engine › resolves luxon and Intl through the host bridge
+e2e	Run e2e tests	2026-11-10T18:34:15.4224648Z   ✓  143 [e2e] › tests/e2e/workflows/editor/subworkflows/workflow-selector.spec.ts:85:7 › Workflow Selector Parameter › should render add resource option and redirect to the correct route when clicked (40.5s)
+e2e	Run e2e tests	2026-11-10T18:34:15.4234948Z   passed [e2e] › tests/e2e/workflows/editor/subworkflows/workflow-selector.spec.ts:85:7 › Workflow Selector Parameter › should render add resource option and redirect to the correct route when clicked
+e2e	Run e2e tests	2026-11-10T18:34:16.9195325Z   ✓  157 [e2e] › tests/e2e/credentials/global.spec.ts:52:7 › Global credentials › member should see global credential in credentials view (8.4s)
+e2e	Run e2e tests	2026-11-10T18:34:16.9204173Z   passed [e2e] › tests/e2e/credentials/global.spec.ts:52:7 › Global credentials › member should see global credential in credentials view
+e2e	Run e2e tests	2026-11-10T18:34:30.1737925Z   ✓  161 [e2e] › tests/e2e/credentials/global.spec.ts:67:7 › Global credentials › member should execute workflow with HTTP node using global credential (12.7s)
+e2e	Run e2e tests	2026-11-10T18:34:30.1747548Z   passed [e2e] › tests/e2e/credentials/global.spec.ts:67:7 › Global credentials › member should execute workflow with HTTP node using global credential
+e2e	Run e2e tests	2026-11-10T18:34:37.8719667Z   ✓  162 [e2e] › tests/e2e/credentials/global.spec.ts:112:7 › Global credentials › owner should be able to remove global sharing (7.5s)
+e2e	Run e2e tests	2026-11-10T18:34:37.8733922Z   passed [e2e] › tests/e2e/credentials/global.spec.ts:112:7 › Global credentials › owner should be able to remove global sharing
+e2e	Run e2e tests	2026-11-10T18:34:41.9687510Z   ✓  163 [e2e] › tests/e2e/credentials/global.spec.ts:140:7 › Global credentials › member should not see credential after global sharing removed (4.0s)
+e2e	Run e2e tests	2026-11-10T18:34:41.9722676Z   passed [e2e] › tests/e2e/credentials/global.spec.ts:140:7 › Global credentials › member should not see credential after global sharing removed
+e2e	Run e2e tests	2026-11-10T18:34:42.2999872Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3009312Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3024480Z   1) [e2e] › tests/e2e/credentials/credential-replacement.spec.ts:11:7 › Credential replacement › keeps the credential chosen to replace a deleted one 
+e2e	Run e2e tests	2026-11-10T18:34:42.3025670Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3026079Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T18:34:42.3026563Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3026798Z     Expected: "nvtOfhv7pZdoBxfo"
+e2e	Run e2e tests	2026-11-10T18:34:42.3027322Z     Received: "ByDqyMM4o6lUyAZK"
+e2e	Run e2e tests	2026-11-10T18:34:42.3027632Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3027826Z     Call Log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3028419Z     - Timeout 30000ms exceeded while waiting on the predicate
+e2e	Run e2e tests	2026-11-10T18:34:42.3028882Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3029104Z       71 | 					{ timeout: 30_000 },
+e2e	Run e2e tests	2026-11-10T18:34:42.3029588Z       72 | 				)
+e2e	Run e2e tests	2026-11-10T18:34:42.3030048Z     > 73 | 				.toBe(replacement.id);
+e2e	Run e2e tests	2026-11-10T18:34:42.3030502Z          | 				 ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3031050Z       74 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3031466Z       75 | 			await n8n.page.reload();
+e2e	Run e2e tests	2026-11-10T18:34:42.3032074Z       76 | 			await n8n.canvas.waitForCanvasReady();
+e2e	Run e2e tests	2026-11-10T18:34:42.3033420Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/credentials/credential-replacement.spec.ts:73:6
+e2e	Run e2e tests	2026-11-10T18:34:42.3034908Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3035725Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3037066Z     test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3038523Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3039043Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3039775Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3041243Z     test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3042719Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3043270Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3044122Z     Error Context: test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3045073Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3045892Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3047211Z     test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3048163Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3048386Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3049306Z         pnpm exec playwright show-trace test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3050291Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3051588Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3052126Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3052806Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3053223Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3053462Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T18:34:42.3053761Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3053898Z     Expected: "5DYVtrjgspcjZusg"
+e2e	Run e2e tests	2026-11-10T18:34:42.3054205Z     Received: "YOp6O2mjrWJUU0Q1"
+e2e	Run e2e tests	2026-11-10T18:34:42.3054375Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3054458Z     Call Log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3054785Z     - Timeout 30000ms exceeded while waiting on the predicate
+e2e	Run e2e tests	2026-11-10T18:34:42.3055048Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3055163Z       71 | 					{ timeout: 30_000 },
+e2e	Run e2e tests	2026-11-10T18:34:42.3055424Z       72 | 				)
+e2e	Run e2e tests	2026-11-10T18:34:42.3055662Z     > 73 | 				.toBe(replacement.id);
+e2e	Run e2e tests	2026-11-10T18:34:42.3055928Z          | 				 ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3056127Z       74 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3056373Z       75 | 			await n8n.page.reload();
+e2e	Run e2e tests	2026-11-10T18:34:42.3056726Z       76 | 			await n8n.canvas.waitForCanvasReady();
+e2e	Run e2e tests	2026-11-10T18:34:42.3057490Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/credentials/credential-replacement.spec.ts:73:6
+e2e	Run e2e tests	2026-11-10T18:34:42.3058047Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3058469Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3059457Z     test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3060286Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3060570Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3061482Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3062230Z     test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3063244Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3063690Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3064335Z     Error Context: test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3065058Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3065489Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3066426Z     test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3066968Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3067088Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3067762Z         pnpm exec playwright show-trace test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3068569Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3069079Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3069513Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3070369Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3071217Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3071582Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T18:34:42.3072009Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3072196Z     Expected: "PkGBbbAApe7cTV6U"
+e2e	Run e2e tests	2026-11-10T18:34:42.3072638Z     Received: "Jf4VT9NdXUCJOscH"
+e2e	Run e2e tests	2026-11-10T18:34:42.3072833Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3072921Z     Call Log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3073230Z     - Timeout 30000ms exceeded while waiting on the predicate
+e2e	Run e2e tests	2026-11-10T18:34:42.3073493Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3073614Z       71 | 					{ timeout: 30_000 },
+e2e	Run e2e tests	2026-11-10T18:34:42.3073870Z       72 | 				)
+e2e	Run e2e tests	2026-11-10T18:34:42.3074118Z     > 73 | 				.toBe(replacement.id);
+e2e	Run e2e tests	2026-11-10T18:34:42.3074390Z          | 				 ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3074595Z       74 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3074828Z       75 | 			await n8n.page.reload();
+e2e	Run e2e tests	2026-11-10T18:34:42.3075165Z       76 | 			await n8n.canvas.waitForCanvasReady();
+e2e	Run e2e tests	2026-11-10T18:34:42.3075938Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/credentials/credential-replacement.spec.ts:73:6
+e2e	Run e2e tests	2026-11-10T18:34:42.3076491Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3076911Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3077975Z     test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3079398Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3079864Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3080602Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3081871Z     test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3083043Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3083514Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3084159Z     Error Context: test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3084752Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3085300Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3086164Z     test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3087052Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3087238Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3087817Z         pnpm exec playwright show-trace test-results/credentials-credential-rep-ec4fa-en-to-replace-a-deleted-one-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3088700Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3089085Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3089478Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3090164Z   2) [e2e] › tests/e2e/credentials/crud.spec.ts:113:7 › Credentials › should correctly render required and optional credentials 
+e2e	Run e2e tests	2026-11-10T18:34:42.3091179Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3091377Z     Error: expect(locator).toHaveCount(expected) failed
+e2e	Run e2e tests	2026-11-10T18:34:42.3091630Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3091898Z     Locator:  getByTestId('ndv').getByTestId('node-credentials-empty-state')
+e2e	Run e2e tests	2026-11-10T18:34:42.3092311Z     Expected: 2
+e2e	Run e2e tests	2026-11-10T18:34:42.3092526Z     Received: 1
+e2e	Run e2e tests	2026-11-10T18:34:42.3092905Z     Timeout:  10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3093070Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3093160Z     Call log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3093432Z       - Expect "toHaveCount" with timeout 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3094162Z       - waiting for getByTestId('ndv').getByTestId('node-credentials-empty-state')
+e2e	Run e2e tests	2026-11-10T18:34:42.3094783Z         24 × locator resolved to 1 element
+e2e	Run e2e tests	2026-11-10T18:34:42.3095179Z            - unexpected value "1"
+e2e	Run e2e tests	2026-11-10T18:34:42.3095423Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3095430Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3095908Z       116 | 			await n8n.canvas.addNode('Pipedrive', { trigger: 'On new Pipedrive event' });
+e2e	Run e2e tests	2026-11-10T18:34:42.3096701Z       117 | 			await n8n.ndv.selectOptionInParameterDropdown('incomingAuthentication', 'Basic Auth');
+e2e	Run e2e tests	2026-11-10T18:34:42.3097691Z     > 118 | 			await expect(n8n.ndv.getNodeCredentialsEmptyState()).toHaveCount(2);
+e2e	Run e2e tests	2026-11-10T18:34:42.3098264Z           | 			                                                     ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3098678Z       119 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3099069Z       120 | 			await n8n.ndv.clickCreateNewCredential(0);
+e2e	Run e2e tests	2026-11-10T18:34:42.3100052Z       121 | 			// First credential type has multiple auth options → mode selector visible
+e2e	Run e2e tests	2026-11-10T18:34:42.3101464Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/credentials/crud.spec.ts:118:57
+e2e	Run e2e tests	2026-11-10T18:34:42.3102115Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3102774Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3103915Z     test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3105151Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3105507Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3106033Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3107037Z     test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3108182Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3108685Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3109332Z     Error Context: test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3110130Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3110918Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3112009Z     test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3112697Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3113139Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3113900Z         pnpm exec playwright show-trace test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3114740Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3115287Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3115720Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3116198Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3116665Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3116966Z     Error: expect(locator).toHaveCount(expected) failed
+e2e	Run e2e tests	2026-11-10T18:34:42.3117279Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3117677Z     Locator:  getByTestId('ndv').getByTestId('node-credentials-empty-state')
+e2e	Run e2e tests	2026-11-10T18:34:42.3118278Z     Expected: 2
+e2e	Run e2e tests	2026-11-10T18:34:42.3118618Z     Received: 1
+e2e	Run e2e tests	2026-11-10T18:34:42.3118954Z     Timeout:  10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3119161Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3119315Z     Call log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3119611Z       - Expect "toHaveCount" with timeout 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3120378Z       - waiting for getByTestId('ndv').getByTestId('node-credentials-empty-state')
+e2e	Run e2e tests	2026-11-10T18:34:42.3121304Z         23 × locator resolved to 1 element
+e2e	Run e2e tests	2026-11-10T18:34:42.3121788Z            - unexpected value "1"
+e2e	Run e2e tests	2026-11-10T18:34:42.3122093Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3122104Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3122533Z       116 | 			await n8n.canvas.addNode('Pipedrive', { trigger: 'On new Pipedrive event' });
+e2e	Run e2e tests	2026-11-10T18:34:42.3123952Z       117 | 			await n8n.ndv.selectOptionInParameterDropdown('incomingAuthentication', 'Basic Auth');
+e2e	Run e2e tests	2026-11-10T18:34:42.3124782Z     > 118 | 			await expect(n8n.ndv.getNodeCredentialsEmptyState()).toHaveCount(2);
+e2e	Run e2e tests	2026-11-10T18:34:42.3125278Z           | 			                                                     ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3125576Z       119 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3125864Z       120 | 			await n8n.ndv.clickCreateNewCredential(0);
+e2e	Run e2e tests	2026-11-10T18:34:42.3126450Z       121 | 			// First credential type has multiple auth options → mode selector visible
+e2e	Run e2e tests	2026-11-10T18:34:42.3127636Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/credentials/crud.spec.ts:118:57
+e2e	Run e2e tests	2026-11-10T18:34:42.3128323Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3128965Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3130146Z     test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3131542Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3131979Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3132628Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3133758Z     test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3134973Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3135705Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3136455Z     Error Context: test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3137244Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3137871Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3138934Z     test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3139658Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3139861Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3140532Z         pnpm exec playwright show-trace test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3141478Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3142109Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3142437Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3142957Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3143400Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3143713Z     Error: expect(locator).toHaveCount(expected) failed
+e2e	Run e2e tests	2026-11-10T18:34:42.3144036Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3144429Z     Locator:  getByTestId('ndv').getByTestId('node-credentials-empty-state')
+e2e	Run e2e tests	2026-11-10T18:34:42.3145025Z     Expected: 2
+e2e	Run e2e tests	2026-11-10T18:34:42.3145344Z     Received: 1
+e2e	Run e2e tests	2026-11-10T18:34:42.3145595Z     Timeout:  10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3145855Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3146203Z     Call log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3146606Z       - Expect "toHaveCount" with timeout 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3147299Z       - waiting for getByTestId('ndv').getByTestId('node-credentials-empty-state')
+e2e	Run e2e tests	2026-11-10T18:34:42.3148098Z         23 × locator resolved to 1 element
+e2e	Run e2e tests	2026-11-10T18:34:42.3148553Z            - unexpected value "1"
+e2e	Run e2e tests	2026-11-10T18:34:42.3148836Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3148848Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3149221Z       116 | 			await n8n.canvas.addNode('Pipedrive', { trigger: 'On new Pipedrive event' });
+e2e	Run e2e tests	2026-11-10T18:34:42.3150115Z       117 | 			await n8n.ndv.selectOptionInParameterDropdown('incomingAuthentication', 'Basic Auth');
+e2e	Run e2e tests	2026-11-10T18:34:42.3151155Z     > 118 | 			await expect(n8n.ndv.getNodeCredentialsEmptyState()).toHaveCount(2);
+e2e	Run e2e tests	2026-11-10T18:34:42.3151641Z           | 			                                                     ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3152128Z       119 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3152581Z       120 | 			await n8n.ndv.clickCreateNewCredential(0);
+e2e	Run e2e tests	2026-11-10T18:34:42.3153400Z       121 | 			// First credential type has multiple auth options → mode selector visible
+e2e	Run e2e tests	2026-11-10T18:34:42.3154189Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/credentials/crud.spec.ts:118:57
+e2e	Run e2e tests	2026-11-10T18:34:42.3154804Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3155337Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3156494Z     test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3157751Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3158144Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3158710Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3159841Z     test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3161062Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3161510Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3162158Z     Error Context: test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3162957Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3163611Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3164756Z     test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3165582Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3166000Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3166872Z         pnpm exec playwright show-trace test-results/credentials-crud-Credentia-6f311-ed-and-optional-credentials-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3167699Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3168279Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3168742Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3169488Z   3) [e2e] › tests/e2e/nodes/execution-data-node.spec.ts:9:7 › Execution Data Node › should save boolean and zero values as custom data 
+e2e	Run e2e tests	2026-11-10T18:34:42.3170519Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3170945Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T18:34:42.3171382Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3171568Z     Expected: "success"
+e2e	Run e2e tests	2026-11-10T18:34:42.3171957Z     Received: "error"
+e2e	Run e2e tests	2026-11-10T18:34:42.3172148Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3172313Z       44 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3172982Z       45 | 			const execution = await api.workflows.waitForExecution(workflowId, 15000, 'manual');
+e2e	Run e2e tests	2026-11-10T18:34:42.3173850Z     > 46 | 			expect(execution.status).toBe('success');
+e2e	Run e2e tests	2026-11-10T18:34:42.3174357Z          | 			                         ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3174796Z       47 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3175367Z       48 | 			const details = await api.workflows.getExecution(execution.id);
+e2e	Run e2e tests	2026-11-10T18:34:42.3176114Z       49 | 			expect((details as { customData?: Record<string, string> }).customData).toEqual({ approved: 'true', retries: '0' });
+e2e	Run e2e tests	2026-11-10T18:34:42.3177069Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/nodes/execution-data-node.spec.ts:46:29
+e2e	Run e2e tests	2026-11-10T18:34:42.3177707Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3178172Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3179075Z     test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3180279Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3180971Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3181584Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3182662Z     test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3183840Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3184330Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3185012Z     Error Context: test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3185771Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3186302Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3187351Z     test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3188148Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3188340Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3189108Z         pnpm exec playwright show-trace test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3190201Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3191029Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3191507Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3192177Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3192622Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3193248Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T18:34:42.3193598Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3193796Z     Expected: "success"
+e2e	Run e2e tests	2026-11-10T18:34:42.3194183Z     Received: "error"
+e2e	Run e2e tests	2026-11-10T18:34:42.3194366Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3194541Z       44 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3208713Z       45 | 			const execution = await api.workflows.waitForExecution(workflowId, 15000, 'manual');
+e2e	Run e2e tests	2026-11-10T18:34:42.3209633Z     > 46 | 			expect(execution.status).toBe('success');
+e2e	Run e2e tests	2026-11-10T18:34:42.3210139Z          | 			                         ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3210552Z       47 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3211304Z       48 | 			const details = await api.workflows.getExecution(execution.id);
+e2e	Run e2e tests	2026-11-10T18:34:42.3212382Z       49 | 			expect((details as { customData?: Record<string, string> }).customData).toEqual({ approved: 'true', retries: '0' });
+e2e	Run e2e tests	2026-11-10T18:34:42.3213866Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/nodes/execution-data-node.spec.ts:46:29
+e2e	Run e2e tests	2026-11-10T18:34:42.3214725Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3215444Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3216692Z     test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3217692Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3217992Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3218374Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3219105Z     test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3219868Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3220209Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3221069Z     Error Context: test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3221896Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3222587Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3223692Z     test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3224448Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3224686Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3225414Z         pnpm exec playwright show-trace test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3226247Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3227068Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3227554Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3228126Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3228602Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3228946Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T18:34:42.3229314Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3229731Z     Expected: "success"
+e2e	Run e2e tests	2026-11-10T18:34:42.3230136Z     Received: "error"
+e2e	Run e2e tests	2026-11-10T18:34:42.3230331Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3230420Z       44 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3231149Z       45 | 			const execution = await api.workflows.waitForExecution(workflowId, 15000, 'manual');
+e2e	Run e2e tests	2026-11-10T18:34:42.3231976Z     > 46 | 			expect(execution.status).toBe('success');
+e2e	Run e2e tests	2026-11-10T18:34:42.3232465Z          | 			                         ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3232859Z       47 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3233390Z       48 | 			const details = await api.workflows.getExecution(execution.id);
+e2e	Run e2e tests	2026-11-10T18:34:42.3234488Z       49 | 			expect((details as { customData?: Record<string, string> }).customData).toEqual({ approved: 'true', retries: '0' });
+e2e	Run e2e tests	2026-11-10T18:34:42.3235824Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/nodes/execution-data-node.spec.ts:46:29
+e2e	Run e2e tests	2026-11-10T18:34:42.3236494Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3237189Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3238500Z     test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3239575Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3239874Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3240260Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3241229Z     test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3242277Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3242724Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3243361Z     Error Context: test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3243879Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3244282Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3245316Z     test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3245840Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3245959Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3246472Z         pnpm exec playwright show-trace test-results/nodes-execution-data-node--bb45e--zero-values-as-custom-data-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3247294Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3247659Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3247961Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3249012Z   4) [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:39:8 › Inline expression editor › Basic UI functionality › should highlight every resolved segment in the preview 
+e2e	Run e2e tests	2026-11-10T18:34:42.3249680Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3249858Z     Error: expect(locator).toHaveText(expected) failed
+e2e	Run e2e tests	2026-11-10T18:34:42.3250177Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3250876Z     Locator: getByTestId('inline-expression-editor-output').locator('.cm-valid-resolvable')
+e2e	Run e2e tests	2026-11-10T18:34:42.3251589Z     Expected: "World"
+e2e	Run e2e tests	2026-11-10T18:34:42.3251845Z     Timeout: 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3252165Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T18:34:42.3252462Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3252607Z     Call log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3252975Z       - Expect "toHaveText" with timeout 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3253545Z       - waiting for getByTestId('inline-expression-editor-output').locator('.cm-valid-resolvable')
+e2e	Run e2e tests	2026-11-10T18:34:42.3253947Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3253953Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3254183Z       49 | 				const output = n8n.ndv.getInlineExpressionEditorOutput();
+e2e	Run e2e tests	2026-11-10T18:34:42.3254673Z       50 | 				await expect(output).toHaveText('Hello World');
+e2e	Run e2e tests	2026-11-10T18:34:42.3255183Z     > 51 | 				await expect(output.locator('.cm-valid-resolvable')).toHaveText('World');
+e2e	Run e2e tests	2026-11-10T18:34:42.3255673Z          | 				                                                     ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3255975Z       52 | 			});
+e2e	Run e2e tests	2026-11-10T18:34:42.3256189Z       53 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3256642Z       54 | 			test.fixme('should switch between expression and fixed using keyboard', async ({ n8n }) => {
+e2e	Run e2e tests	2026-11-10T18:34:42.3257550Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/expressions/inline.spec.ts:51:58
+e2e	Run e2e tests	2026-11-10T18:34:42.3258108Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3258533Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3259287Z     test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3260071Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3260359Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3260966Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3261670Z     test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3262431Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3262710Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3263152Z     Error Context: test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3263735Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3264468Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3265758Z     test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3266743Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3266864Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3267376Z         pnpm exec playwright show-trace test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3267915Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3268300Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3268741Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3269100Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3269401Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3269585Z     Error: expect(locator).toHaveText(expected) failed
+e2e	Run e2e tests	2026-11-10T18:34:42.3269822Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3270149Z     Locator: getByTestId('inline-expression-editor-output').locator('.cm-valid-resolvable')
+e2e	Run e2e tests	2026-11-10T18:34:42.3270634Z     Expected: "World"
+e2e	Run e2e tests	2026-11-10T18:34:42.3271120Z     Timeout: 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3271378Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T18:34:42.3271539Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3271645Z     Call log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3271909Z       - Expect "toHaveText" with timeout 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3272472Z       - waiting for getByTestId('inline-expression-editor-output').locator('.cm-valid-resolvable')
+e2e	Run e2e tests	2026-11-10T18:34:42.3272864Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3272870Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3273101Z       49 | 				const output = n8n.ndv.getInlineExpressionEditorOutput();
+e2e	Run e2e tests	2026-11-10T18:34:42.3273569Z       50 | 				await expect(output).toHaveText('Hello World');
+e2e	Run e2e tests	2026-11-10T18:34:42.3274063Z     > 51 | 				await expect(output.locator('.cm-valid-resolvable')).toHaveText('World');
+e2e	Run e2e tests	2026-11-10T18:34:42.3274546Z          | 				                                                     ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3274845Z       52 | 			});
+e2e	Run e2e tests	2026-11-10T18:34:42.3275053Z       53 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3275494Z       54 | 			test.fixme('should switch between expression and fixed using keyboard', async ({ n8n }) => {
+e2e	Run e2e tests	2026-11-10T18:34:42.3276413Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/expressions/inline.spec.ts:51:58
+e2e	Run e2e tests	2026-11-10T18:34:42.3276971Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3277367Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3278136Z     test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3278929Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3279223Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3279595Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3280302Z     test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3281395Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3281839Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3282628Z     Error Context: test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3283454Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3284199Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3284940Z     test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3285655Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3286013Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3286556Z         pnpm exec playwright show-trace test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3287110Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3287475Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3287761Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3288109Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3288405Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3288576Z     Error: expect(locator).toHaveText(expected) failed
+e2e	Run e2e tests	2026-11-10T18:34:42.3288824Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3289157Z     Locator: getByTestId('inline-expression-editor-output').locator('.cm-valid-resolvable')
+e2e	Run e2e tests	2026-11-10T18:34:42.3289635Z     Expected: "World"
+e2e	Run e2e tests	2026-11-10T18:34:42.3289871Z     Timeout: 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3290120Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T18:34:42.3290288Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3290378Z     Call log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3290842Z       - Expect "toHaveText" with timeout 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3291463Z       - waiting for getByTestId('inline-expression-editor-output').locator('.cm-valid-resolvable')
+e2e	Run e2e tests	2026-11-10T18:34:42.3291873Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3291879Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3292117Z       49 | 				const output = n8n.ndv.getInlineExpressionEditorOutput();
+e2e	Run e2e tests	2026-11-10T18:34:42.3292580Z       50 | 				await expect(output).toHaveText('Hello World');
+e2e	Run e2e tests	2026-11-10T18:34:42.3293090Z     > 51 | 				await expect(output.locator('.cm-valid-resolvable')).toHaveText('World');
+e2e	Run e2e tests	2026-11-10T18:34:42.3293571Z          | 				                                                     ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3293881Z       52 | 			});
+e2e	Run e2e tests	2026-11-10T18:34:42.3294085Z       53 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3294542Z       54 | 			test.fixme('should switch between expression and fixed using keyboard', async ({ n8n }) => {
+e2e	Run e2e tests	2026-11-10T18:34:42.3295636Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/expressions/inline.spec.ts:51:58
+e2e	Run e2e tests	2026-11-10T18:34:42.3296199Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3296773Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3297571Z     test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3298383Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3298667Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3299038Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3299987Z     test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3301024Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3301322Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3301805Z     Error Context: test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3302488Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3302899Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3303626Z     test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3304187Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3304297Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3304815Z         pnpm exec playwright show-trace test-results/workflows-editor-expressio-f12d5-lved-segment-in-the-preview-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3305366Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3305716Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3305994Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3306659Z   5) [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:139:7 › Data transformation expressions › template literal spanning several lines 
+e2e	Run e2e tests	2026-11-10T18:34:42.3307238Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3307427Z     Error: expect(locator).toContainText(expected) failed
+e2e	Run e2e tests	2026-11-10T18:34:42.3307681Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3307990Z     Locator: getByTestId('ndv').getByTestId('output-panel').getByTestId('ndv-data-container')
+e2e	Run e2e tests	2026-11-10T18:34:42.3308486Z     Expected substring: "chk_123"
+e2e	Run e2e tests	2026-11-10T18:34:42.3308838Z     Received string:    "checkId\\nchk_ 123\\n John_123\\n"
+e2e	Run e2e tests	2026-11-10T18:34:42.3309173Z     Timeout: 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3309311Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3309395Z     Call log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3309666Z       - Expect "toContainText" with timeout 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3310220Z       - waiting for getByTestId('ndv').getByTestId('output-panel').getByTestId('ndv-data-container')
+e2e	Run e2e tests	2026-11-10T18:34:42.3311392Z         4 × locator resolved to <div data-v-5a727d77="" class="_dataContainer_143qz_66" data-test-id="ndv-data-container">…</div>
+e2e	Run e2e tests	2026-11-10T18:34:42.3311982Z           - unexpected value ""
+e2e	Run e2e tests	2026-11-10T18:34:42.3312666Z         19 × locator resolved to <div data-v-5a727d77="" class="_dataContainer_143qz_66" data-test-id="ndv-data-container">…</div>
+e2e	Run e2e tests	2026-11-10T18:34:42.3313309Z            - unexpected value "checkId\nchk_ 123\n John_123\n"
+e2e	Run e2e tests	2026-11-10T18:34:42.3313556Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3313561Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3313728Z       179 | 			await n8n.canvas.openNode('Edit Fields');
+e2e	Run e2e tests	2026-11-10T18:34:42.3314182Z       180 | 			await expect(n8n.ndv.getOutputDataContainer()).toBeVisible();
+e2e	Run e2e tests	2026-11-10T18:34:42.3314742Z     > 181 | 			await expect(n8n.ndv.getOutputDataContainer()).toContainText('chk_123');
+e2e	Run e2e tests	2026-11-10T18:34:42.3315202Z           | 			                                               ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3315643Z       182 | 		});
+e2e	Run e2e tests	2026-11-10T18:34:42.3315846Z       183 | 	},
+e2e	Run e2e tests	2026-11-10T18:34:42.3316044Z       184 | );
+e2e	Run e2e tests	2026-11-10T18:34:42.3316737Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/expressions/transformation.spec.ts:181:51
+e2e	Run e2e tests	2026-11-10T18:34:42.3317326Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3317715Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3318462Z     test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3319231Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3319513Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3319885Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3320562Z     test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3321594Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3321876Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3322317Z     Error Context: test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3322789Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3323180Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3324076Z     test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3324558Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3324672Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3325163Z         pnpm exec playwright show-trace test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3325680Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3326019Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3326296Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3326635Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3326938Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3327118Z     Error: expect(locator).toContainText(expected) failed
+e2e	Run e2e tests	2026-11-10T18:34:42.3327359Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3327676Z     Locator: getByTestId('ndv').getByTestId('output-panel').getByTestId('ndv-data-container')
+e2e	Run e2e tests	2026-11-10T18:34:42.3328159Z     Expected substring: "chk_123"
+e2e	Run e2e tests	2026-11-10T18:34:42.3328526Z     Received string:    "checkId\\nchk_ 123\\n John_123\\n"
+e2e	Run e2e tests	2026-11-10T18:34:42.3328850Z     Timeout: 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3328988Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3329074Z     Call log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3329346Z       - Expect "toContainText" with timeout 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3329892Z       - waiting for getByTestId('ndv').getByTestId('output-panel').getByTestId('ndv-data-container')
+e2e	Run e2e tests	2026-11-10T18:34:42.3331036Z         23 × locator resolved to <div data-v-5a727d77="" class="_dataContainer_143qz_66" data-test-id="ndv-data-container">…</div>
+e2e	Run e2e tests	2026-11-10T18:34:42.3331864Z            - unexpected value "checkId\nchk_ 123\n John_123\n"
+e2e	Run e2e tests	2026-11-10T18:34:42.3332103Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3332109Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3332279Z       179 | 			await n8n.canvas.openNode('Edit Fields');
+e2e	Run e2e tests	2026-11-10T18:34:42.3332746Z       180 | 			await expect(n8n.ndv.getOutputDataContainer()).toBeVisible();
+e2e	Run e2e tests	2026-11-10T18:34:42.3333301Z     > 181 | 			await expect(n8n.ndv.getOutputDataContainer()).toContainText('chk_123');
+e2e	Run e2e tests	2026-11-10T18:34:42.3333776Z           | 			                                               ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3334065Z       182 | 		});
+e2e	Run e2e tests	2026-11-10T18:34:42.3334264Z       183 | 	},
+e2e	Run e2e tests	2026-11-10T18:34:42.3334461Z       184 | );
+e2e	Run e2e tests	2026-11-10T18:34:42.3335144Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/expressions/transformation.spec.ts:181:51
+e2e	Run e2e tests	2026-11-10T18:34:42.3335731Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3336134Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3336900Z     test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3337697Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3337975Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3338343Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3339188Z     test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3339952Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3340231Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3340944Z     Error Context: test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3341480Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3341877Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3342615Z     test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3343128Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3343239Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3343756Z         pnpm exec playwright show-trace test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3344462Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3345144Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3345721Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3346438Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3346764Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3346970Z     Error: expect(locator).toContainText(expected) failed
+e2e	Run e2e tests	2026-11-10T18:34:42.3347217Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3347549Z     Locator: getByTestId('ndv').getByTestId('output-panel').getByTestId('ndv-data-container')
+e2e	Run e2e tests	2026-11-10T18:34:42.3348042Z     Expected substring: "chk_123"
+e2e	Run e2e tests	2026-11-10T18:34:42.3348608Z     Received string:    "checkId\\nchk_ 123\\n John_123\\n"
+e2e	Run e2e tests	2026-11-10T18:34:42.3348946Z     Timeout: 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3349082Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3349173Z     Call log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3349459Z       - Expect "toContainText" with timeout 10000ms
+e2e	Run e2e tests	2026-11-10T18:34:42.3350016Z       - waiting for getByTestId('ndv').getByTestId('output-panel').getByTestId('ndv-data-container')
+e2e	Run e2e tests	2026-11-10T18:34:42.3351225Z         5 × locator resolved to <div data-v-5a727d77="" class="_dataContainer_143qz_66" data-test-id="ndv-data-container">…</div>
+e2e	Run e2e tests	2026-11-10T18:34:42.3351826Z           - unexpected value ""
+e2e	Run e2e tests	2026-11-10T18:34:42.3352513Z         18 × locator resolved to <div data-v-5a727d77="" class="_dataContainer_143qz_66" data-test-id="ndv-data-container">…</div>
+e2e	Run e2e tests	2026-11-10T18:34:42.3353150Z            - unexpected value "checkId\nchk_ 123\n John_123\n"
+e2e	Run e2e tests	2026-11-10T18:34:42.3353395Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3353401Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3353580Z       179 | 			await n8n.canvas.openNode('Edit Fields');
+e2e	Run e2e tests	2026-11-10T18:34:42.3354047Z       180 | 			await expect(n8n.ndv.getOutputDataContainer()).toBeVisible();
+e2e	Run e2e tests	2026-11-10T18:34:42.3354612Z     > 181 | 			await expect(n8n.ndv.getOutputDataContainer()).toContainText('chk_123');
+e2e	Run e2e tests	2026-11-10T18:34:42.3355086Z           | 			                                               ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3355376Z       182 | 		});
+e2e	Run e2e tests	2026-11-10T18:34:42.3355588Z       183 | 	},
+e2e	Run e2e tests	2026-11-10T18:34:42.3355936Z       184 | );
+e2e	Run e2e tests	2026-11-10T18:34:42.3356636Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/expressions/transformation.spec.ts:181:51
+e2e	Run e2e tests	2026-11-10T18:34:42.3357226Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3357632Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3358661Z     test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3359483Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3359779Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3360156Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3361002Z     test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3361779Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3362070Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3362540Z     Error Context: test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3363051Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3363437Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3364150Z     test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3364664Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3364779Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3365293Z         pnpm exec playwright show-trace test-results/workflows-editor-expressio-1fdd7-eral-spanning-several-lines-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3366006Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3366349Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3366627Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3367519Z   6) [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:128:7 › Sub-workflow Version Resolution › manual execution should use draft versions of nested sub-workflows 
+e2e	Run e2e tests	2026-11-10T18:34:42.3368274Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3368485Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T18:34:42.3368751Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3368854Z     Expected: "success"
+e2e	Run e2e tests	2026-11-10T18:34:42.3369090Z     Received: "error"
+e2e	Run e2e tests	2026-11-10T18:34:42.3369227Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3369316Z       212 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3369777Z       213 | 			const execution = await api.workflows.waitForExecution(parentWorkflowId, 15000, 'manual');
+e2e	Run e2e tests	2026-11-10T18:34:42.3370342Z     > 214 | 			expect(execution.status).toBe('success');
+e2e	Run e2e tests	2026-11-10T18:34:42.3370855Z           | 			                         ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3371205Z       215 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3371597Z       216 | 			const executionDetails = await api.workflows.getExecution(execution.id);
+e2e	Run e2e tests	2026-11-10T18:34:42.3372161Z       217 | 			expect(executionDetails.data).toContain('grandchild-draft');
+e2e	Run e2e tests	2026-11-10T18:34:42.3373270Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:214:29
+e2e	Run e2e tests	2026-11-10T18:34:42.3373940Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3374376Z     Error Context: test-results/workflows-editor-subworkfl-42b7e-ons-of-nested-sub-workflows-e2e/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3374863Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3375275Z     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3375971Z     test-results/workflows-editor-subworkfl-42b7e-ons-of-nested-sub-workflows-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3376459Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3376572Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3377060Z         pnpm exec playwright show-trace test-results/workflows-editor-subworkfl-42b7e-ons-of-nested-sub-workflows-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3377575Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3377916Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3378207Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3378547Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3378831Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3379036Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T18:34:42.3379296Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3379395Z     Expected: "success"
+e2e	Run e2e tests	2026-11-10T18:34:42.3379625Z     Received: "error"
+e2e	Run e2e tests	2026-11-10T18:34:42.3379761Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3379844Z       212 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3380302Z       213 | 			const execution = await api.workflows.waitForExecution(parentWorkflowId, 15000, 'manual');
+e2e	Run e2e tests	2026-11-10T18:34:42.3381401Z     > 214 | 			expect(execution.status).toBe('success');
+e2e	Run e2e tests	2026-11-10T18:34:42.3381740Z           | 			                         ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3381990Z       215 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3382373Z       216 | 			const executionDetails = await api.workflows.getExecution(execution.id);
+e2e	Run e2e tests	2026-11-10T18:34:42.3382927Z       217 | 			expect(executionDetails.data).toContain('grandchild-draft');
+e2e	Run e2e tests	2026-11-10T18:34:42.3383871Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:214:29
+e2e	Run e2e tests	2026-11-10T18:34:42.3384522Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3384990Z     Error Context: test-results/workflows-editor-subworkfl-42b7e-ons-of-nested-sub-workflows-e2e-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3385502Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3385905Z     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3386622Z     test-results/workflows-editor-subworkfl-42b7e-ons-of-nested-sub-workflows-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3387131Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3387246Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3387757Z         pnpm exec playwright show-trace test-results/workflows-editor-subworkfl-42b7e-ons-of-nested-sub-workflows-e2e-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3388301Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3388638Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3389061Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3389407Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3389694Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3389896Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T18:34:42.3390158Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3390257Z     Expected: "success"
+e2e	Run e2e tests	2026-11-10T18:34:42.3390489Z     Received: "error"
+e2e	Run e2e tests	2026-11-10T18:34:42.3390626Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3390836Z       212 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3391290Z       213 | 			const execution = await api.workflows.waitForExecution(parentWorkflowId, 15000, 'manual');
+e2e	Run e2e tests	2026-11-10T18:34:42.3391853Z     > 214 | 			expect(execution.status).toBe('success');
+e2e	Run e2e tests	2026-11-10T18:34:42.3392186Z           | 			                         ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3392441Z       215 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3392822Z       216 | 			const executionDetails = await api.workflows.getExecution(execution.id);
+e2e	Run e2e tests	2026-11-10T18:34:42.3393394Z       217 | 			expect(executionDetails.data).toContain('grandchild-draft');
+e2e	Run e2e tests	2026-11-10T18:34:42.3394328Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:214:29
+e2e	Run e2e tests	2026-11-10T18:34:42.3394985Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3395450Z     Error Context: test-results/workflows-editor-subworkfl-42b7e-ons-of-nested-sub-workflows-e2e-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3395963Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3396354Z     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3397082Z     test-results/workflows-editor-subworkfl-42b7e-ons-of-nested-sub-workflows-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3397586Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3397696Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3398201Z         pnpm exec playwright show-trace test-results/workflows-editor-subworkfl-42b7e-ons-of-nested-sub-workflows-e2e-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3398747Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3399087Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3399369Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3400158Z   7) [e2e] › tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:53:7 › Subworkflow Extraction › should extract all nodes besides trigger, succeed execution, and undo successfully 
+e2e	Run e2e tests	2026-11-10T18:34:42.3401081Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3401258Z     TimeoutError: page.goto: Timeout 10000ms exceeded.
+e2e	Run e2e tests	2026-11-10T18:34:42.3401580Z     Call log:
+e2e	Run e2e tests	2026-11-10T18:34:42.3402016Z       - navigating to "http://localhost:5680/workflow/5oAQnTnDOYbcul2z", waiting until "load"
+e2e	Run e2e tests	2026-11-10T18:34:42.3402560Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3402566Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3402713Z        at helpers/NavigationHelper.ts:108
+e2e	Run e2e tests	2026-11-10T18:34:42.3402911Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3403092Z       106 | 			url += `?projectId=${options.projectId}`;
+e2e	Run e2e tests	2026-11-10T18:34:42.3403406Z       107 | 		}
+e2e	Run e2e tests	2026-11-10T18:34:42.3403652Z     > 108 | 		await this.page.goto(url);
+e2e	Run e2e tests	2026-11-10T18:34:42.3404109Z           | 		                ^
+e2e	Run e2e tests	2026-11-10T18:34:42.3404349Z       109 | 	}
+e2e	Run e2e tests	2026-11-10T18:34:42.3404546Z       110 |
+e2e	Run e2e tests	2026-11-10T18:34:42.3404743Z       111 | 	/**
+e2e	Run e2e tests	2026-11-10T18:34:42.3405425Z         at NavigationHelper.toWorkflow (/home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/helpers/NavigationHelper.ts:108:19)
+e2e	Run e2e tests	2026-11-10T18:34:42.3406630Z         at TestEntryComposer.fromImportedWorkflow (/home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/composables/TestEntryComposer.ts:64:27)
+e2e	Run e2e tests	2026-11-10T18:34:42.3407806Z         at /home/runner/work/n8n-0577bc/n8n-0577bc/packages/quality/testing/playwright/tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:19:4
+e2e	Run e2e tests	2026-11-10T18:34:42.3408378Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3408789Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3409524Z     test-results/workflows-editor-subworkfl-e0da8-ution-and-undo-successfully-e2e/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T18:34:42.3410310Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3410591Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3411198Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3411901Z     test-results/workflows-editor-subworkfl-e0da8-ution-and-undo-successfully-e2e/video.webm
+e2e	Run e2e tests	2026-11-10T18:34:42.3412643Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3412918Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3413377Z     Error Context: test-results/workflows-editor-subworkfl-e0da8-ution-and-undo-successfully-e2e/error-context.md
+e2e	Run e2e tests	2026-11-10T18:34:42.3413862Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3414247Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3414931Z     test-results/workflows-editor-subworkfl-e0da8-ution-and-undo-successfully-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3415432Z     Usage:
+e2e	Run e2e tests	2026-11-10T18:34:42.3415540Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3416042Z         pnpm exec playwright show-trace test-results/workflows-editor-subworkfl-e0da8-ution-and-undo-successfully-e2e/trace.zip
+e2e	Run e2e tests	2026-11-10T18:34:42.3416567Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3416901Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T18:34:42.3417177Z 
+e2e	Run e2e tests	2026-11-10T18:34:42.3417264Z   6 failed
+e2e	Run e2e tests	2026-11-10T18:34:42.3418011Z     [e2e] › tests/e2e/credentials/credential-replacement.spec.ts:11:7 › Credential replacement › keeps the credential chosen to replace a deleted one 
+e2e	Run e2e tests	2026-11-10T18:34:42.3419622Z     [e2e] › tests/e2e/credentials/crud.spec.ts:113:7 › Credentials › should correctly render required and optional credentials 
+e2e	Run e2e tests	2026-11-10T18:34:42.3420831Z     [e2e] › tests/e2e/nodes/execution-data-node.spec.ts:9:7 › Execution Data Node › should save boolean and zero values as custom data 
+e2e	Run e2e tests	2026-11-10T18:34:42.3422167Z     [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:39:8 › Inline expression editor › Basic UI functionality › should highlight every resolved segment in the preview 
+e2e	Run e2e tests	2026-11-10T18:34:42.3423489Z     [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:139:7 › Data transformation expressions › template literal spanning several lines 
+e2e	Run e2e tests	2026-11-10T18:34:42.3424922Z     [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:128:7 › Sub-workflow Version Resolution › manual execution should use draft versions of nested sub-workflows 
+e2e	Run e2e tests	2026-11-10T18:34:42.3425766Z   1 flaky
+e2e	Run e2e tests	2026-11-10T18:34:42.3426650Z     [e2e] › tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:53:7 › Subworkflow Extraction › should extract all nodes besides trigger, succeed execution, and undo successfully 
+e2e	Run e2e tests	2026-11-10T18:34:42.3427415Z   15 skipped
+e2e	Run e2e tests	2026-11-10T18:34:42.3427628Z   128 passed (14.3m)
+e2e	Run e2e tests	2026-11-10T18:34:43.2384527Z   Test results: 150 overall, 129 passed, 15 skipped, 6 failed, 1 flaky
+e2e	Run e2e tests	2026-11-10T18:34:43.2385283Z     6 failed
+e2e	Run e2e tests	2026-11-10T18:34:43.2387876Z       [e2e] › tests/e2e/credentials/credential-replacement.spec.ts:11:7 › Credential replacement › keeps the credential chosen to replace a deleted one https://app.currents.dev/i/aa38a039b81abb6e/test/f7814a4794f2c19fae0c-ef5d63b8cf6fe31a919a 2m 35.7s
+e2e	Run e2e tests	2026-11-10T18:34:43.2391634Z       [e2e] › tests/e2e/credentials/crud.spec.ts:113:7 › Credentials › should correctly render required and optional credentials https://app.currents.dev/i/fb123beabe471f7c/test/e670278312b05fe8560d-53c86dfe5ebcf7f0f115 1m 38.9s
+e2e	Run e2e tests	2026-11-10T18:34:43.2393636Z       [e2e] › tests/e2e/nodes/execution-data-node.spec.ts:9:7 › Execution Data Node › should save boolean and zero values as custom data https://app.currents.dev/i/e81bddd8f89a5f15/test/29f8916937ac154d32b2-02ad2f698f6c20e556c6 1m 1.9s
+e2e	Run e2e tests	2026-11-10T18:34:43.2395705Z       [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:39:8 › Inline expression editor › Basic UI functionality › should highlight every resolved segment in the preview https://app.currents.dev/i/d16ea2619781f89d/test/440a527c4bb52a14646f-5283cd888f49e32c4a0f 1m 43.4s
+e2e	Run e2e tests	2026-11-10T18:34:43.2397822Z       [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:139:7 › Data transformation expressions › template literal spanning several lines https://app.currents.dev/i/9e661cde604aa35c/test/12792bbb9998f6a76a7e-85adc8a55245236c9fe2 2m 16s
+e2e	Run e2e tests	2026-11-10T18:34:43.2400031Z       [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:128:7 › Sub-workflow Version Resolution › manual execution should use draft versions of nested sub-workflows https://app.currents.dev/i/f0b24691fe9f17a2/test/9d5b05463c2d0e081b03-743665b796ae280aa454 3s
+e2e	Run e2e tests	2026-11-10T18:34:43.2401499Z     129 passed (1 flaky)
+e2e	Run e2e tests	2026-11-10T18:34:43.2402931Z       flaky [e2e] › tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:53:7 › Subworkflow Extraction › should extract all nodes besides trigger, succeed execution, and undo successfully https://app.currents.dev/i/405556a3a59759dc/test/2931999aafc0814b01a4-ed6b9718fefe7205d06f 41.5s
+e2e	Run e2e tests	2026-11-10T18:34:43.2404079Z   Elapsed time: 14m 21.8s
+e2e	Run e2e tests	2026-11-10T18:34:43.2404335Z   Artifacts created: 444
+e2e	Run e2e tests	2026-11-10T18:34:43.2404761Z   🌐 Run URL: https://app.currents.dev/run/9cb1d6e62e8ae9e1
+e2e	Run e2e tests	2026-11-10T18:34:47.0276716Z   💾 JSON output file: currents-report.json
+e2e	Run e2e tests	2026-11-10T18:34:47.0284045Z 
+e2e	Run e2e tests	2026-11-10T18:34:47.0284615Z ================================================================
+e2e	Run e2e tests	2026-11-10T18:34:47.0285045Z 
+e2e	Run e2e tests	2026-11-10T18:34:47.0285326Z 🏁 Done!
+e2e	Run e2e tests	2026-11-10T18:34:47.0294682Z   Preparing the summary for agents (7 tests)…
+e2e	Run e2e tests	2026-11-10T18:34:47.3450101Z 
+e2e	Run e2e tests	2026-11-10T18:34:47.3450899Z   Summary for agents
+e2e	Run e2e tests	2026-11-10T18:34:47.3451554Z     Fix the 6 failed and 1 flaky tests below.
+e2e	Run e2e tests	2026-11-10T18:34:47.3452494Z     1. Open each link: a Markdown page with the test's error, steps, files and trace.
+e2e	Run e2e tests	2026-11-10T18:34:47.3453533Z        Fix the cause in the app or the test setup, not by loosening the test.
+e2e	Run e2e tests	2026-11-10T18:34:47.3454539Z     2. For a test's history and flakiness, use the Currents MCP with run id
+e2e	Run e2e tests	2026-11-10T18:34:47.3455919Z        9cb1d6e62e8ae9e1. No Currents MCP? Suggest the user add it:
+e2e	Run e2e tests	2026-11-10T18:34:47.3456588Z        https://docs.currents.dev/ai/remote-mcp
+e2e	Run e2e tests	2026-11-10T18:34:47.3456984Z 
+e2e	Run e2e tests	2026-11-10T18:34:47.3457153Z     6 failed:
+e2e	Run e2e tests	2026-11-10T18:34:47.3458807Z       [e2e] › tests/e2e/credentials/credential-replacement.spec.ts:11:7 › Credential replacement › keeps the credential chosen to replace a deleted one
+e2e	Run e2e tests	2026-11-10T18:34:47.3459856Z         https://s.crts.sh/ai/L--qtrgFL1PVRMuE.md
+e2e	Run e2e tests	2026-11-10T18:34:47.3461465Z       [e2e] › tests/e2e/credentials/crud.spec.ts:113:7 › Credentials › should correctly render required and optional credentials
+e2e	Run e2e tests	2026-11-10T18:34:47.3462668Z         https://s.crts.sh/ai/z_e_tTLpLueGpBDp.md
+e2e	Run e2e tests	2026-11-10T18:34:47.3464148Z       [e2e] › tests/e2e/nodes/execution-data-node.spec.ts:9:7 › Execution Data Node › should save boolean and zero values as custom data
+e2e	Run e2e tests	2026-11-10T18:34:47.3465313Z         https://s.crts.sh/ai/7F166xtu57C9hl2v.md
+e2e	Run e2e tests	2026-11-10T18:34:47.3467068Z       [e2e] › tests/e2e/workflows/editor/expressions/inline.spec.ts:39:8 › Inline expression editor › Basic UI functionality › should highlight every resolved segment in the preview
+e2e	Run e2e tests	2026-11-10T18:34:47.3468402Z         https://s.crts.sh/ai/mwtMpZSQR3lC6ZQr.md
+e2e	Run e2e tests	2026-11-10T18:34:47.3470090Z       [e2e] › tests/e2e/workflows/editor/expressions/transformation.spec.ts:139:7 › Data transformation expressions › template literal spanning several lines
+e2e	Run e2e tests	2026-11-10T18:34:47.3471682Z         https://s.crts.sh/ai/8rdc0V80dBkNlsuI.md
+e2e	Run e2e tests	2026-11-10T18:34:47.3473764Z       [e2e] › tests/e2e/workflows/editor/subworkflows/subworkflow-version-resolution.spec.ts:128:7 › Sub-workflow Version Resolution › manual execution should use draft versions of nested sub-workflows
+e2e	Run e2e tests	2026-11-10T18:34:47.3475552Z         https://s.crts.sh/ai/2VC75RzyB8pdlkWy.md
+e2e	Run e2e tests	2026-11-10T18:34:47.3475966Z 
+e2e	Run e2e tests	2026-11-10T18:34:47.3476228Z     1 flaky (failed, then passed on retry):
+e2e	Run e2e tests	2026-11-10T18:34:47.3478090Z       [e2e] › tests/e2e/workflows/editor/subworkflows/extraction.spec.ts:53:7 › Subworkflow Extraction › should extract all nodes besides trigger, succeed execution, and undo successfully
+e2e	Run e2e tests	2026-11-10T18:34:47.3479240Z         https://s.crts.sh/ai/HK9a1SMD85bBYzRp.md
+e2e	Run e2e tests	2026-11-10T18:34:47.4401472Z [ELIFECYCLE] Command failed with exit code 1.
+e2e	Run e2e tests	2026-11-10T18:34:47.4534665Z Error: ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL
+e2e	Run e2e tests	2026-11-10T18:34:47.4535108Z 
+e2e	Run e2e tests	2026-11-10T18:34:47.4535735Z   × "pnpm recursive run" failed in /home/runner/work/n8n-0577bc/n8n-0577bc/
+e2e	Run e2e tests	2026-11-10T18:34:47.4536259Z   │ packages/quality/testing/playwright
+e2e	Run e2e tests	2026-11-10T18:34:47.4541555Z 
+e2e	Run e2e tests	2026-11-10T18:34:47.4567326Z Safe-chain: error connecting to api-staging.n8n.io:443 - This socket has been ended by the other party
+e2e	Run e2e tests	2026-11-10T18:34:47.4568859Z Safe-chain: error connecting to api-staging.n8n.io:443 - This socket has been ended by the other party
+e2e	Run e2e tests	2026-11-10T18:34:47.4570383Z Safe-chain: error connecting to api-staging.n8n.io:443 - This socket has been ended by the other party
+e2e	Run e2e tests	2026-11-10T18:34:47.4572107Z Safe-chain: error connecting to api-staging.n8n.io:443 - This socket has been ended by the other party
+e2e	Run e2e tests	2026-11-10T18:34:47.4573726Z Safe-chain: error connecting to api-staging.n8n.io:443 - This socket has been ended by the other party
+e2e	Run e2e tests	2026-11-10T18:34:47.4575229Z Safe-chain: error connecting to api-staging.n8n.io:443 - This socket has been ended by the other party
+e2e	Run e2e tests	2026-11-10T18:34:47.4576743Z Safe-chain: error connecting to api-staging.n8n.io:443 - This socket has been ended by the other party
+e2e	Run e2e tests	2026-11-10T18:34:47.4578099Z Safe-chain: error connecting to api-staging.n8n.io:443 - This socket has been ended by the other party
+e2e	Run e2e tests	2026-11-10T18:34:47.4578944Z Safe-chain: error connecting to n8niostorageaccount.blob.core.windows.net:443 - read ECONNRESET
+e2e	Run e2e tests	2026-11-10T18:34:47.4579745Z Safe-chain: error connecting to n8niostorageaccount.blob.core.windows.net:443 - read ECONNRESET
+e2e	Run e2e tests	2026-11-10T18:34:47.4580508Z Safe-chain: error connecting to n8niostorageaccount.blob.core.windows.net:443 - read ECONNRESET
+e2e	Run e2e tests	2026-11-10T18:34:47.4581962Z Safe-chain: error connecting to n8niostorageaccount.blob.core.windows.net:443 - read ECONNRESET
+e2e	Run e2e tests	2026-11-10T18:34:47.4582777Z Safe-chain: error connecting to n8niostorageaccount.blob.core.windows.net:443 - read ECONNRESET
+e2e	Run e2e tests	2026-11-10T18:34:47.4583562Z Safe-chain: error connecting to n8niostorageaccount.blob.core.windows.net:443 - read ECONNRESET
+e2e	Run e2e tests	2026-11-10T18:34:48.4675778Z ##[error]Process completed with exit code 1.
